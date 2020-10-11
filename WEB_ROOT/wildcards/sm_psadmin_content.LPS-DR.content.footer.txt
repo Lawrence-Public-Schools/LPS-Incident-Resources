@@ -1,0 +1,32 @@
+<script type="text/javascript">
+    function AddLPSDispResources() {
+
+if ($j("#incidentBody").length >0)
+{   $j( "<div id=\"incidentResources\"></div>").prependTo("#myForm > div.box-round");
+   $j( "<h2 class=\"toggle expanded\" title=\"Click here to expand or collapse\">Discipline Resources</h2>").prependTo("#myForm > div.box-round");
+   $j("div#incidentResources").prepend( "<div class=\"row\"></div>" );
+   $j("div#incidentResources > div.row").prepend("<p>Discipline Resources</p><p>Blah Blah Blah, any text</p><p>&nbsp;</p><p><a target=\"_blank\" href=\"https://docs.google.com/spreadsheets/d/1lw5iK-H34n2nNmQLiX_S8aW6iCym1Pf_/edit#gid=560338187\">tate Profile Codes</a></p><p>&nbsp;</p><p><a target=\"_blank\" href=\"https://test-webdisp.lawrence.k12.ma.us/admin/Dashboard.aspx\">Old Discipline</a></p><p><a target=\"_blank\" href=\"https://discipline.lawrence.k12.ma.us/Incidents/LogIn.aspx\">Old Incidents</a></p><p>&nbsp;</p><p></p><p><a target=\"_blank\" href=\"https://docs.google.com/spreadsheets/d/1rrbimFsjyXHgPltcs5OwK623PthzIKMqPEzQwKIr7A4/view\">Code of Conduct Handbook</a></p><p>&nbsp;</p><p></p><p><a target=\"_blank\" href=\"https://docs.google.com/spreadsheets/d/1dpE3PC-9q2FeZO6-8iKvl49geo8rVew7/edit#gid=2075961696\">Discipline Code Infraction and DESE Coding</a></p><p>&nbsp;</p><p><a target=\"_blank\" href=\"https://docs.google.com/document/d/1u-wOldNIcpw0K9xM2XdBe8dAitmc9mvj/edit\">Procedure Flow Chart for School Leaders</a>&nbsp;</p><p><a target=\"_blank\" href=\"https://docs.google.com/document/d/1lnXxNq4XQcxkd4y72WH8tozn9jo5iSWb/edit\">Disciplinary Action Codes &ndash; DESE approved</a></p>")
+   $j('#myForm > div.box-round > h2:first').each(function(){
+      hideCollapseClasses($j(this));
+      hideCollapseText($j(this));
+      hideCollapseTarget($j(this));
+   });
+} else {}
+};
+
+//debugger;
+if (!!LPSDRTEST )
+{
+    //console.log('LPSDRTEST not is null');
+    var LPSDRTEST = 0;
+} else {
+    //console.log('LPSDRTEST is null');
+    var LPSDRTEST = 1;
+    $j(document).ready(AddLPSDispResources);
+}
+
+//if (LPSDRTEST == 1)
+//{
+    //$j(document).ready(AddLPSDispResources);
+//}
+</script>
