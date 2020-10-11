@@ -1,16 +1,37 @@
+<!-- create a hidden table with added rows -->
+<div id="LPS-DRCustomhiddentable" style="display: none;">
+<h2 class="toggle expanded" title="Click here to expand or collapse">Incident Resources</h2>
+<div id="incidentResources" class=""><div class="row">
+<p><a target="_blank" href="https://drive.google.com/file/d/1u4sUmr2SOqOPy6SGtCyg_WyptTgIX7A7/view">Code of Conduct Handbook</a></p>
+<p><a target="_blank" href="https://docs.google.com/spreadsheets/d/1rrbimFsjyXHgPltcs5OwK623PthzIKMqPEzQwKIr7A4/view">Code of Conduct Mappings</a></p>
+<p><a target="_blank" href="https://docs.google.com/presentation/d/1xH_yR3av6L1n9v7PWLR2Y-79i4CsUVNukKM7JGx8d3A/view">Reporting Incidents in PowerSchool Deck (Information & Instructions)</a></p>
+<p>Reporting Incidents in PowerSchool Recording</p>
+<p>&nbsp;</p>
+<p></p>
+<p><a target="_blank" href="http://www.doe.mass.edu/infoservices/data/ssdr/">DESE SSDR Information</a></p>
+<p>&nbsp;</p>
+<p></p>
+<p><a target="_blank" href="https://test-webdisp.lawrence.k12.ma.us/admin/Dashboard.aspx">Old Discipline for REFERENCE ONLY</a></p>
+<p><a target="_blank" href="https://docs.google.com/spreadsheets/d/1dpE3PC-9q2FeZO6-8iKvl49geo8rVew7/edit#gid=2075961696">Old Discipline Code Mappings for REFERENCE ONLY</a></p>
+</div>
+</div>
+</div>
+
+
 <script type="text/javascript">
     function AddLPSDispResources() {
 
 if ($j("#incidentBody").length >0)
-{   $j( "<div id=\"incidentResources\"></div>").prependTo("#myForm > div.box-round");
-   $j( "<h2 class=\"toggle expanded\" title=\"Click here to expand or collapse\">Discipline Resources</h2>").prependTo("#myForm > div.box-round");
-   $j("div#incidentResources").prepend( "<div class=\"row\"></div>" );
-   $j("div#incidentResources > div.row").prepend("<p>Discipline Resources</p><p>Blah Blah Blah, any text</p><p>&nbsp;</p><p><a target=\"_blank\" href=\"https://docs.google.com/spreadsheets/d/1lw5iK-H34n2nNmQLiX_S8aW6iCym1Pf_/edit#gid=560338187\">tate Profile Codes</a></p><p>&nbsp;</p><p><a target=\"_blank\" href=\"https://test-webdisp.lawrence.k12.ma.us/admin/Dashboard.aspx\">Old Discipline</a></p><p><a target=\"_blank\" href=\"https://discipline.lawrence.k12.ma.us/Incidents/LogIn.aspx\">Old Incidents</a></p><p>&nbsp;</p><p></p><p><a target=\"_blank\" href=\"https://docs.google.com/spreadsheets/d/1rrbimFsjyXHgPltcs5OwK623PthzIKMqPEzQwKIr7A4/view\">Code of Conduct Handbook</a></p><p>&nbsp;</p><p></p><p><a target=\"_blank\" href=\"https://docs.google.com/spreadsheets/d/1dpE3PC-9q2FeZO6-8iKvl49geo8rVew7/edit#gid=2075961696\">Discipline Code Infraction and DESE Coding</a></p><p>&nbsp;</p><p><a target=\"_blank\" href=\"https://docs.google.com/document/d/1u-wOldNIcpw0K9xM2XdBe8dAitmc9mvj/edit\">Procedure Flow Chart for School Leaders</a>&nbsp;</p><p><a target=\"_blank\" href=\"https://docs.google.com/document/d/1lnXxNq4XQcxkd4y72WH8tozn9jo5iSWb/edit\">Disciplinary Action Codes &ndash; DESE approved</a></p>")
+{   
+   //$j("div#LPS-DRCustomhiddentable:first").remove(); //PS has double includes
+   $j("#myForm > div.box-round").prepend($j("div#LPS-DRCustomhiddentable div#incidentResources"));
+   $j("#myForm > div.box-round").prepend($j("div#LPS-DRCustomhiddentable h2"));
    $j('#myForm > div.box-round > h2:first').each(function(){
       hideCollapseClasses($j(this));
       hideCollapseText($j(this));
       hideCollapseTarget($j(this));
    });
+   $j("div#LPS-DRCustomhiddentable").remove();
 } else {}
 };
 
