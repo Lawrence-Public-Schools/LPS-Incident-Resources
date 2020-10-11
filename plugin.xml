@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<plugin xmlns="http://plugin.powerschool.pearson.com"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation='http://plugin.powerschool.pearson.com plugin.xsd'
+        name="LPS Discipline Resources"
+        version="1.0"
+        description="add Discipline Resources to incidents">
+    <publisher name="Logan Arias">
+    <contact email="Logan.Arias@lawrence.k12.ma.us"/>
+    </publisher>
+</plugin>
