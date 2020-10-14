@@ -2,10 +2,13 @@
 <div id="LPS-DRCustomhiddentable" style="display: none;">
 <h2 class="toggle expanded" title="Click here to expand or collapse">Incident Resources</h2>
 <div id="incidentResources" class=""><div class="row">
+<p><a target="_blank" href="https://drive.google.com/file/d/13weNUksaVl3ZckHyQ3rJ7AwXL4hyd1Ix/view">Superintendent Directive Regarding Discipline</a></p>
+<p><a target="_blank" href="https://drive.google.com/file/d/13eQtb8ZQSa8QRxe-E0sdxNCJbRDc6vQ-/view">MOU with the Lawrence Police Department</a></p>
 <p><a target="_blank" href="https://drive.google.com/file/d/1u4sUmr2SOqOPy6SGtCyg_WyptTgIX7A7/view">Code of Conduct Handbook</a></p>
 <p><a target="_blank" href="https://docs.google.com/spreadsheets/d/1rrbimFsjyXHgPltcs5OwK623PthzIKMqPEzQwKIr7A4/view">Code of Conduct Mappings</a></p>
 <p><a target="_blank" href="https://docs.google.com/presentation/d/1xH_yR3av6L1n9v7PWLR2Y-79i4CsUVNukKM7JGx8d3A/view">Reporting Incidents in PowerSchool Deck (Information & Instructions)</a></p>
-<p>Reporting Incidents in PowerSchool Recording</p>
+<p><a target="_blank" href="https://drive.google.com/file/d/1KHFqIz0-i3GSSLLP3tepsyn0PAfJnJqu/preview">Reporting incidents in PowerSchool Training Video</a></p>
+<p><a target="_blank" href="https://drive.google.com/file/d/1MlZxGKdw5MYGgaxEt-mogJei_rs7nCya/preview">Incident Letters Training Video</a></p>
 <p>&nbsp;</p>
 <p></p>
 <p><a target="_blank" href="http://www.doe.mass.edu/infoservices/data/ssdr/">DESE SSDR Information</a></p>
@@ -23,7 +26,7 @@
 
 if ($j("#incidentBody").length >0)
 {   
-   //$j("div#LPS-DRCustomhiddentable:first").remove(); //PS has double includes
+   $j("div#LPS-DRCustomhiddentable:first").remove(); //PS has double includes
    $j("#myForm > div.box-round").prepend($j("div#LPS-DRCustomhiddentable div#incidentResources"));
    $j("#myForm > div.box-round").prepend($j("div#LPS-DRCustomhiddentable h2"));
    $j('#myForm > div.box-round > h2:first').each(function(){
