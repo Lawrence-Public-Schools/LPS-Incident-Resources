@@ -26,7 +26,7 @@
 
 if ($j("#incidentBody").length >0)
 {   
-   $j("div#LPS-DRCustomhiddentable:first").remove(); //PS has double includes
+   //$j("div#LPS-DRCustomhiddentable:first").remove(); //PS had double includes in older versions
    $j("#myForm > div.box-round").prepend($j("div#LPS-DRCustomhiddentable div#incidentResources"));
    $j("#myForm > div.box-round").prepend($j("div#LPS-DRCustomhiddentable h2"));
    $j('#myForm > div.box-round > h2:first').each(function(){
