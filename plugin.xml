@@ -6,7 +6,7 @@
         name="LPS Discipline Resources"
         version="1.4"
         description="add Discipline Resources to incidents">
-    <publisher name="Benjamin Houle">
-    <contact email="Benjamin.Houle@lawrence.k12.ma.us"/>
+    <publisher name="Logan Arias">
+    <contact email="Logan.Arias@lawrence.k12.ma.us"/>
     </publisher>
 </plugin>
