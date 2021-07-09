@@ -1,23 +1,92 @@
 <!-- create a hidden table with added rows -->
 <div id="LPS-DRCustomhiddentable" style="display: none;">
-<h2 class="toggle expanded" title="Click here to expand or collapse">Incident Resources</h2>
-<div id="incidentResources" class=""><div class="row">
-<p><a target="_blank" href="https://drive.google.com/file/d/13weNUksaVl3ZckHyQ3rJ7AwXL4hyd1Ix/view">Superintendent Directive Regarding Discipline</a></p>
-<p><a target="_blank" href="https://drive.google.com/file/d/13eQtb8ZQSa8QRxe-E0sdxNCJbRDc6vQ-/view">MOU with the Lawrence Police Department</a></p>
-<p><a target="_blank" href="https://drive.google.com/file/d/1u4sUmr2SOqOPy6SGtCyg_WyptTgIX7A7/view">Code of Conduct Handbook</a></p>
-<p><a target="_blank" href="https://docs.google.com/spreadsheets/d/1rrbimFsjyXHgPltcs5OwK623PthzIKMqPEzQwKIr7A4/view">Code of Conduct Mappings</a></p>
-<p><a target="_blank" href="https://docs.google.com/presentation/d/1xH_yR3av6L1n9v7PWLR2Y-79i4CsUVNukKM7JGx8d3A/view">Reporting Incidents in PowerSchool Deck (Information & Instructions)</a></p>
-<p><a target="_blank" href="https://drive.google.com/file/d/1KHFqIz0-i3GSSLLP3tepsyn0PAfJnJqu/preview">Reporting incidents in PowerSchool Training Video</a></p>
-<p><a target="_blank" href="https://drive.google.com/file/d/1MlZxGKdw5MYGgaxEt-mogJei_rs7nCya/preview">Incident Letters Training Video</a></p>
-<p>&nbsp;</p>
-<p></p>
-<p><a target="_blank" href="http://www.doe.mass.edu/infoservices/data/ssdr/">DESE SSDR Information</a></p>
-<p>&nbsp;</p>
-<p></p>
-<p><a target="_blank" href="https://test-webdisp.lawrence.k12.ma.us/admin/Dashboard.aspx">Old Discipline for REFERENCE ONLY</a></p>
-<p><a target="_blank" href="https://docs.google.com/spreadsheets/d/1dpE3PC-9q2FeZO6-8iKvl49geo8rVew7/edit#gid=2075961696">Old Discipline Code Mappings for REFERENCE ONLY</a></p>
-</div>
-</div>
+  <h2 class="toggle expanded" title="Click here to expand or collapse">Incident Resources</h2>
+  <div id="incidentResources" class="">
+    <div class="row">
+      <!-- <p><a target="_blank" href="https://drive.google.com/file/d/13weNUksaVl3ZckHyQ3rJ7AwXL4hyd1Ix/view">Superintendent Directive Regarding Discipline</a></p>  *Now included in the Code of Conduct Book* -->
+      <p><a target="_blank" href="https://drive.google.com/file/d/13eQtb8ZQSa8QRxe-E0sdxNCJbRDc6vQ-/view">MOU with the Lawrence Police Department</a></p>
+      <p><a target="_blank" href="https://drive.google.com/file/d/11rDS7INSUd9efwX4milCtJ9Ym0wFMkpj/view">Code of Conduct Handbook</a></p> <!-- Version: 2021-22 -->
+      <p><a target="_blank" href="https://docs.google.com/spreadsheets/d/1rrbimFsjyXHgPltcs5OwK623PthzIKMqPEzQwKIr7A4/view">Code of Conduct Mappings</a></p>
+      <p><a target="_blank" href="https://docs.google.com/presentation/d/1xH_yR3av6L1n9v7PWLR2Y-79i4CsUVNukKM7JGx8d3A/view">Reporting Incidents in PowerSchool Deck (Information & Instructions)</a></p>
+      <p><a target="_blank" href="https://drive.google.com/file/d/1KHFqIz0-i3GSSLLP3tepsyn0PAfJnJqu/preview">Reporting incidents in PowerSchool Training Video</a></p>
+      
+      <p><a target="_blank" href="https://docs.google.com/document/d/17PUss7Zfxq7qmkR6j273dBAbCLsyquSr-Fsft8d7g9s/view">Discipline Letter Instructions</a></p>
+      <!-- Letter Template collapsable-list -->
+      <p class="toggle expanded" title="Click here to expand or collapse">Incident Letter Templates</p>
+      <div id="letterTemplates" class="">
+        <div class="row">
+          <table class="grid" data-pstablefilter="">
+            <thead>
+              <th>English</th>
+              <th>Spanish</th>
+            </thead>
+            <tbody>
+              <tr>
+                <td><a target="_blank" href="https://docs.google.com/document/d/1vQnFcEAFBlmBakbf_mfT83mn4sMJV7FB/view?usp=sharing">37H ½ Hearing Outcome - expulsion (English)</a></td>
+                <td><a target="_blank" href="https://docs.google.com/document/d/1KsKcGAvecbVqCR4Htl7PPK-_tgQCKorf/view?usp=sharing">37H ½ Hearing Outcome - expulsion (Spanish)</a></td>
+              </tr>
+              <tr>
+                <td><a target="_blank" href="https://docs.google.com/document/d/1EXFpRAMDKmkL_FSmY5-mgtzbh5OlcPek/view?usp=sharing">37H ½ Hearing Outcome - suspension (English)</a></td>
+                <td><a target="_blank" href="https://docs.google.com/document/d/1mUlLqlJe_dOImZnu_zLkHGTy19Sb6NpI/view?usp=sharing">37H ½ Hearing Outcome - suspension (Spanish)</a></td>
+              </tr>
+              <tr>
+                <td><a target="_blank" href="https://docs.google.com/document/d/1UJcC2KhsATlmb02j_NVggbyGJWua70Go/view?usp=sharing">37H ½ Notice - expulsion (English)</a></td>
+                <td><a target="_blank" href="https://docs.google.com/document/d/1TudWraEd1d5_T-5hvrv4gH_sFoKhQYki/view?usp=sharing">37H ½ Notice - expulsion (Spanish)</a></td>
+              </tr>
+              <tr>
+                <td><a target="_blank" href="https://docs.google.com/document/d/1PQwbPP9B1ma8SiAgPTv-Fr0fBJu1LNB0/view?usp=sharing">37H ½ Notice - suspension (English)</a></td>
+                <td><a target="_blank" href="https://docs.google.com/document/d/1xRLHvObYogfjL-GlNo8Q0H_sqhyAo8uB/view?usp=sharing">37H ½ Notice - suspension (Spanish)</a></td>
+              </tr>
+              <tr>
+                <td><a target="_blank" href="https://docs.google.com/document/d/1RSf6urFCw6e8q_gYFF-awCsttuda7SFC/view?usp=sharing">37H Hearing Notice (English)</a></td>
+                <td><a target="_blank" href="https://docs.google.com/document/d/1HeJDwCShDScdbtVNvzcVJgMnEl0G_gAz/view?usp=sharing">37H Hearing Notice (Spanish)</a></td>
+              </tr>
+              <tr>
+                <td><a target="_blank" href="https://docs.google.com/document/d/1kMY0u5Fnb_yKbXsEwyK6hdTTQ2E7l5cN/view?usp=sharing">37H Hearing Outcome - Expel (English)</a></td>
+                <td><a target="_blank" href="https://docs.google.com/document/d/1tTfTnAJRMONr98JAZVSpdoJoTHBlpNpY/view?usp=sharing">37H Hearing Outcome - Expel (Spanish)</a></td>
+              </tr>
+              <tr>
+                <td><a target="_blank" href="https://docs.google.com/document/d/1BKgD-iCERTC5QX8R3QjLe9fKcg6UaNSt/view?usp=sharing">37H Hearing Outcome - Suspend (English)</a></td>
+                <td><a target="_blank" href="https://docs.google.com/document/d/1_YwpAHQH9Fr9W5gDQun5tfIqCheC6UuD/view?usp=sharing">37H Hearing Outcome - Suspend (Spanish)</a></td>
+              </tr>
+              <tr>
+                <td><a target="_blank" href="https://docs.google.com/document/d/1V1jdyv0RrHyaJSJdK7ldw1Yckf2yjuuR/view?usp=sharing">In School Suspension Letter (English)</a></td>
+                <td><a target="_blank" href="https://docs.google.com/document/d/1svFeEfSknWh7TCR1G7lBszHSyksKjxAh/view?usp=sharing">In School Suspension Letter (Spanish</a></td>
+              </tr>
+              <tr>
+                <td><a target="_blank" href="https://docs.google.com/document/d/1MEEnHUFwjiEmqJI2iPJk2nF03eZWYv74/view?usp=sharing">Long Term Suspension - Hearing Outcome (English)</a></td>
+                <td><a target="_blank" href="https://docs.google.com/document/d/1QvTvm3_Si6gXO3onbp2b3UxX-r8I-DRi/view?usp=sharing">Long Term Suspension - Hearing Outcome (Spanish)</a></td>
+              </tr>
+              <tr>
+                <td><a target="_blank" href="https://docs.google.com/document/d/19Frx_GiklGVqmVY5FT6ShKQKi6YIQNrt/view?usp=sharing">Long Term Suspension Notice (English)</a></td>
+                <td><a target="_blank" href="https://docs.google.com/document/d/1-d0QlDNrGEujjpjpGix6mPd32kjnm819/view?usp=sharing">Long Term Suspension Notice (Spanish)</a></td>
+              </tr>
+              <tr>
+                <td><a target="_blank" href="https://docs.google.com/document/d/10fV1H5JA0vpmgh3ZDGZZW9wfOaYiCL4A/view?usp=sharing">Short Term Suspension - Hearing Outcome (English)</a></td>
+                <td><a target="_blank" href="https://docs.google.com/document/d/1CgPDIHQEURWyxqxbyDeTILSKs_WVyVri/view?usp=sharing">Short Term Suspension - Hearing Outcome (Spanish)</a></td>
+              </tr>
+              <tr>
+                <td><a target="_blank" href="https://docs.google.com/document/d/1LRvuBzigwFW3nZaLXYfqHiyjfqKEKUY3/view?usp=sharing">Short Term Suspension Notice (English)</a></td>
+                <td><a target="_blank" href="https://docs.google.com/document/d/1ClEc8Noy_uXHumoOL15eK3DZxt4j5LMB/view?usp=sharing">Short Term Suspension Notice (Spanish)</a></td>
+              </tr>
+              <tr> <!-- Link to G-Drive folder, keeping here just in case -->
+                <td><a target="_blank" href="https://drive.google.com/drive/folders/1qY2RWEjh5Xm0LbShR2DmCpbVXuwGjU2K">Incident Letter Templates (English)</a></td>
+                <td><a target="_blank" href="https://drive.google.com/drive/folders/1XO41n61zIzH-Ducn2nW5HSFdOAuMzo4y">Incident Letter Templates (Spanish)</a></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <p>&nbsp;</p> <!-- Seems like bad formatting, why not use <br>? -->
+      <p></p>
+      <p><a target="_blank" href="http://www.doe.mass.edu/infoservices/data/ssdr/">DESE SSDR Information</a></p>
+      <p>&nbsp;</p>
+      <p></p>
+      <p><a target="_blank" href="https://drive.google.com/file/d/1MlZxGKdw5MYGgaxEt-mogJei_rs7nCya/preview">Incident Letters Training Video - OUTDATED: REFERENCE ONLY</a></p>
+      <p><a target="_blank" href="https://test-webdisp.lawrence.k12.ma.us/admin/Dashboard.aspx">Discipline - OUTDATED: REFERENCE ONLY</a></p>
+      <p><a target="_blank" href="https://docs.google.com/spreadsheets/d/1dpE3PC-9q2FeZO6-8iKvl49geo8rVew7/edit#gid=2075961696">Discipline Code Mappings - OUTDATED: REFERENCE ONLY</a></p>
+    </div>
+  </div>
 </div>
 
 
