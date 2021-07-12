@@ -1,3 +1,17 @@
+<style>
+  #letterTemplates {
+    border-style: none;
+  }
+  #templatesTableHeader {
+    background-color: transparent;
+    font-size: 14px;
+    color: rgb(0, 102, 165);
+    border: none;
+  }
+  #templatesRowDiv {
+    width: 50%;
+  }
+</style>
 <!-- create a hidden table with added rows -->
 <div id="LPS-DRCustomhiddentable" style="display: none;">
   <h2 class="toggle expanded" title="Click here to expand or collapse">Incident Resources</h2>
@@ -9,70 +23,72 @@
       <p><a target="_blank" href="https://docs.google.com/spreadsheets/d/1rrbimFsjyXHgPltcs5OwK623PthzIKMqPEzQwKIr7A4/view">Code of Conduct Mappings</a></p>
       <p><a target="_blank" href="https://docs.google.com/presentation/d/1xH_yR3av6L1n9v7PWLR2Y-79i4CsUVNukKM7JGx8d3A/view">Reporting Incidents in PowerSchool Deck (Information & Instructions)</a></p>
       <p><a target="_blank" href="https://drive.google.com/file/d/1KHFqIz0-i3GSSLLP3tepsyn0PAfJnJqu/preview">Reporting incidents in PowerSchool Training Video</a></p>
+      <p><a target="_blank" href="https://docs.google.com/document/d/17PUss7Zfxq7qmkR6j273dBAbCLsyquSr-Fsft8d7g9s/view?usp=sharing">Discipline Letter Instructions</a></p>
       
-      <p><a target="_blank" href="https://docs.google.com/document/d/17PUss7Zfxq7qmkR6j273dBAbCLsyquSr-Fsft8d7g9s/view">Discipline Letter Instructions</a></p>
-      <!-- Letter Template collapsable-list -->
-      <p class="toggle expanded" title="Click here to expand or collapse">Incident Letter Templates</p>
+      <!--|===============================|Letter Template Collapsible-Table|===============================|-->
+      <h2 id="templatesTableHeader" class="toggle expanded" title="Click here to expand or collapse">Discipline Letter Templates</h2>
       <div id="letterTemplates" class="">
-        <div class="row">
-          <table class="grid" data-pstablefilter="">
+        <div id="templatesRowDiv" class="row">
+          <table class="grid">
             <thead>
               <th>English</th>
-              <th>Spanish</th>
+              <th>Espa&ntilde;ol</th>
             </thead>
             <tbody>
               <tr>
                 <td><a target="_blank" href="https://docs.google.com/document/d/1vQnFcEAFBlmBakbf_mfT83mn4sMJV7FB/view?usp=sharing">37H ½ Hearing Outcome - expulsion (English)</a></td>
-                <td><a target="_blank" href="https://docs.google.com/document/d/1KsKcGAvecbVqCR4Htl7PPK-_tgQCKorf/view?usp=sharing">37H ½ Hearing Outcome - expulsion (Spanish)</a></td>
+                <td><a target="_blank" href="https://docs.google.com/document/d/1KsKcGAvecbVqCR4Htl7PPK-_tgQCKorf/view?usp=sharing">37H ½ Hearing Outcome - expulsion (Espa&ntilde;ol)</a></td>
               </tr>
               <tr>
                 <td><a target="_blank" href="https://docs.google.com/document/d/1EXFpRAMDKmkL_FSmY5-mgtzbh5OlcPek/view?usp=sharing">37H ½ Hearing Outcome - suspension (English)</a></td>
-                <td><a target="_blank" href="https://docs.google.com/document/d/1mUlLqlJe_dOImZnu_zLkHGTy19Sb6NpI/view?usp=sharing">37H ½ Hearing Outcome - suspension (Spanish)</a></td>
+                <td><a target="_blank" href="https://docs.google.com/document/d/1mUlLqlJe_dOImZnu_zLkHGTy19Sb6NpI/view?usp=sharing">37H ½ Hearing Outcome - suspension (Espa&ntilde;ol)</a></td>
               </tr>
               <tr>
                 <td><a target="_blank" href="https://docs.google.com/document/d/1UJcC2KhsATlmb02j_NVggbyGJWua70Go/view?usp=sharing">37H ½ Notice - expulsion (English)</a></td>
-                <td><a target="_blank" href="https://docs.google.com/document/d/1TudWraEd1d5_T-5hvrv4gH_sFoKhQYki/view?usp=sharing">37H ½ Notice - expulsion (Spanish)</a></td>
+                <td><a target="_blank" href="https://docs.google.com/document/d/1TudWraEd1d5_T-5hvrv4gH_sFoKhQYki/view?usp=sharing">37H ½ Notice - expulsion (Espa&ntilde;ol)</a></td>
               </tr>
               <tr>
                 <td><a target="_blank" href="https://docs.google.com/document/d/1PQwbPP9B1ma8SiAgPTv-Fr0fBJu1LNB0/view?usp=sharing">37H ½ Notice - suspension (English)</a></td>
-                <td><a target="_blank" href="https://docs.google.com/document/d/1xRLHvObYogfjL-GlNo8Q0H_sqhyAo8uB/view?usp=sharing">37H ½ Notice - suspension (Spanish)</a></td>
+                <td><a target="_blank" href="https://docs.google.com/document/d/1xRLHvObYogfjL-GlNo8Q0H_sqhyAo8uB/view?usp=sharing">37H ½ Notice - suspension (Espa&ntilde;ol)</a></td>
               </tr>
               <tr>
                 <td><a target="_blank" href="https://docs.google.com/document/d/1RSf6urFCw6e8q_gYFF-awCsttuda7SFC/view?usp=sharing">37H Hearing Notice (English)</a></td>
-                <td><a target="_blank" href="https://docs.google.com/document/d/1HeJDwCShDScdbtVNvzcVJgMnEl0G_gAz/view?usp=sharing">37H Hearing Notice (Spanish)</a></td>
+                <td><a target="_blank" href="https://docs.google.com/document/d/1HeJDwCShDScdbtVNvzcVJgMnEl0G_gAz/view?usp=sharing">37H Hearing Notice (Espa&ntilde;ol)</a></td>
               </tr>
               <tr>
                 <td><a target="_blank" href="https://docs.google.com/document/d/1kMY0u5Fnb_yKbXsEwyK6hdTTQ2E7l5cN/view?usp=sharing">37H Hearing Outcome - Expel (English)</a></td>
-                <td><a target="_blank" href="https://docs.google.com/document/d/1tTfTnAJRMONr98JAZVSpdoJoTHBlpNpY/view?usp=sharing">37H Hearing Outcome - Expel (Spanish)</a></td>
+                <td><a target="_blank" href="https://docs.google.com/document/d/1tTfTnAJRMONr98JAZVSpdoJoTHBlpNpY/view?usp=sharing">37H Hearing Outcome - Expel (Espa&ntilde;ol)</a></td>
               </tr>
               <tr>
                 <td><a target="_blank" href="https://docs.google.com/document/d/1BKgD-iCERTC5QX8R3QjLe9fKcg6UaNSt/view?usp=sharing">37H Hearing Outcome - Suspend (English)</a></td>
-                <td><a target="_blank" href="https://docs.google.com/document/d/1_YwpAHQH9Fr9W5gDQun5tfIqCheC6UuD/view?usp=sharing">37H Hearing Outcome - Suspend (Spanish)</a></td>
+                <td><a target="_blank" href="https://docs.google.com/document/d/1_YwpAHQH9Fr9W5gDQun5tfIqCheC6UuD/view?usp=sharing">37H Hearing Outcome - Suspend (Espa&ntilde;ol)</a></td>
               </tr>
               <tr>
                 <td><a target="_blank" href="https://docs.google.com/document/d/1V1jdyv0RrHyaJSJdK7ldw1Yckf2yjuuR/view?usp=sharing">In School Suspension Letter (English)</a></td>
-                <td><a target="_blank" href="https://docs.google.com/document/d/1svFeEfSknWh7TCR1G7lBszHSyksKjxAh/view?usp=sharing">In School Suspension Letter (Spanish</a></td>
+                <td><a target="_blank" href="https://docs.google.com/document/d/1svFeEfSknWh7TCR1G7lBszHSyksKjxAh/view?usp=sharing">In School Suspension Letter (Espa&ntilde;ol)</a></td>
               </tr>
               <tr>
                 <td><a target="_blank" href="https://docs.google.com/document/d/1MEEnHUFwjiEmqJI2iPJk2nF03eZWYv74/view?usp=sharing">Long Term Suspension - Hearing Outcome (English)</a></td>
-                <td><a target="_blank" href="https://docs.google.com/document/d/1QvTvm3_Si6gXO3onbp2b3UxX-r8I-DRi/view?usp=sharing">Long Term Suspension - Hearing Outcome (Spanish)</a></td>
+                <td><a target="_blank" href="https://docs.google.com/document/d/1QvTvm3_Si6gXO3onbp2b3UxX-r8I-DRi/view?usp=sharing">Long Term Suspension - Hearing Outcome (Espa&ntilde;ol)</a></td>
               </tr>
               <tr>
                 <td><a target="_blank" href="https://docs.google.com/document/d/19Frx_GiklGVqmVY5FT6ShKQKi6YIQNrt/view?usp=sharing">Long Term Suspension Notice (English)</a></td>
-                <td><a target="_blank" href="https://docs.google.com/document/d/1-d0QlDNrGEujjpjpGix6mPd32kjnm819/view?usp=sharing">Long Term Suspension Notice (Spanish)</a></td>
+                <td><a target="_blank" href="https://docs.google.com/document/d/1-d0QlDNrGEujjpjpGix6mPd32kjnm819/view?usp=sharing">Long Term Suspension Notice (Espa&ntilde;ol)</a></td>
               </tr>
               <tr>
                 <td><a target="_blank" href="https://docs.google.com/document/d/10fV1H5JA0vpmgh3ZDGZZW9wfOaYiCL4A/view?usp=sharing">Short Term Suspension - Hearing Outcome (English)</a></td>
-                <td><a target="_blank" href="https://docs.google.com/document/d/1CgPDIHQEURWyxqxbyDeTILSKs_WVyVri/view?usp=sharing">Short Term Suspension - Hearing Outcome (Spanish)</a></td>
+                <td><a target="_blank" href="https://docs.google.com/document/d/1CgPDIHQEURWyxqxbyDeTILSKs_WVyVri/view?usp=sharing">Short Term Suspension - Hearing Outcome (Espa&ntilde;ol)</a></td>
               </tr>
               <tr>
                 <td><a target="_blank" href="https://docs.google.com/document/d/1LRvuBzigwFW3nZaLXYfqHiyjfqKEKUY3/view?usp=sharing">Short Term Suspension Notice (English)</a></td>
-                <td><a target="_blank" href="https://docs.google.com/document/d/1ClEc8Noy_uXHumoOL15eK3DZxt4j5LMB/view?usp=sharing">Short Term Suspension Notice (Spanish)</a></td>
+                <td><a target="_blank" href="https://docs.google.com/document/d/1ClEc8Noy_uXHumoOL15eK3DZxt4j5LMB/view?usp=sharing">Short Term Suspension Notice (Espa&ntilde;ol)</a></td>
               </tr>
-              <tr> <!-- Link to G-Drive folder, keeping here just in case -->
-                <td><a target="_blank" href="https://drive.google.com/drive/folders/1qY2RWEjh5Xm0LbShR2DmCpbVXuwGjU2K">Incident Letter Templates (English)</a></td>
-                <td><a target="_blank" href="https://drive.google.com/drive/folders/1XO41n61zIzH-Ducn2nW5HSFdOAuMzo4y">Incident Letter Templates (Spanish)</a></td>
+              <!--  Links to Google Drive folder, keeping here just in case [ https://drive.google.com/drive/folders/ ]
+              <tr>
+                <td><a target="_blank" href="1qY2RWEjh5Xm0LbShR2DmCpbVXuwGjU2K">All Incident Letter Templates (English)</a></td>
+                <td><a target="_blank" href="1XO41n61zIzH-Ducn2nW5HSFdOAuMzo4y">All Incident Letter Templates (Espa&ntilde;ol)</a></td>
               </tr>
+              -->
             </tbody>
           </table>
         </div>
@@ -91,35 +107,42 @@
 
 
 <script type="text/javascript">
-    function AddLPSDispResources() {
+  function AddLPSDispResources() {
+    if ( $j("#incidentBody").length > 0 ) 
+    {
+      $j("#myForm > div.box-round").prepend($j("div#LPS-DRCustomhiddentable div#incidentResources"));
+      $j("#myForm > div.box-round").prepend($j("div#LPS-DRCustomhiddentable h2"));
+      
+      /* Load resources tab as collapsed */
+      $j('#myForm > div.box-round > h2:first').each(function() {
+        hideCollapseClasses($j(this));
+        hideCollapseText($j(this));
+        hideCollapseTarget($j(this));
+      });
+      
+      /* Load letter templates table as collapsed */
+      var $ttHeader = $j('#templatesTableHeader');
+      hideCollapseClasses($ttHeader);
+      hideCollapseText($ttHeader);
+      hideCollapseTarget($ttHeader);
+      
+      $j("div#LPS-DRCustomhiddentable").remove();
+    }
+  };
 
-if ($j("#incidentBody").length >0)
-{   
-   //$j("div#LPS-DRCustomhiddentable:first").remove(); //PS had double includes in older versions
-   $j("#myForm > div.box-round").prepend($j("div#LPS-DRCustomhiddentable div#incidentResources"));
-   $j("#myForm > div.box-round").prepend($j("div#LPS-DRCustomhiddentable h2"));
-   $j('#myForm > div.box-round > h2:first').each(function(){
-      hideCollapseClasses($j(this));
-      hideCollapseText($j(this));
-      hideCollapseTarget($j(this));
-   });
-   $j("div#LPS-DRCustomhiddentable").remove();
-} else {}
-};
+  //debugger;
+  if (!!LPSDRTEST )
+  {
+      //console.log('LPSDRTEST not is null');
+      var LPSDRTEST = 0;
+  } else {
+      //console.log('LPSDRTEST is null');
+      var LPSDRTEST = 1;
+      $j(document).ready(AddLPSDispResources);
+  }
 
-//debugger;
-if (!!LPSDRTEST )
-{
-    //console.log('LPSDRTEST not is null');
-    var LPSDRTEST = 0;
-} else {
-    //console.log('LPSDRTEST is null');
-    var LPSDRTEST = 1;
-    $j(document).ready(AddLPSDispResources);
-}
-
-//if (LPSDRTEST == 1)
-//{
-    //$j(document).ready(AddLPSDispResources);
-//}
+  //if (LPSDRTEST == 1)
+  //{
+      //$j(document).ready(AddLPSDispResources);
+  //}
 </script>
