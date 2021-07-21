@@ -19,7 +19,7 @@
       <ul>
         <!-- <li><a target="_blank" href="https://drive.google.com/file/d/13weNUksaVl3ZckHyQ3rJ7AwXL4hyd1Ix/view">Superintendent Directive Regarding Discipline</a></li>  *Now included in the Code of Conduct Book* -->
         <li><a target="_blank" href="https://drive.google.com/file/d/13eQtb8ZQSa8QRxe-E0sdxNCJbRDc6vQ-/view">MOU with the Lawrence Police Department</a></li>
-        <li><a target="_blank" href="https://drive.google.com/file/d/11rDS7INSUd9efwX4milCtJ9Ym0wFMkpj/view">Code of Conduct Handbook</a></li> <!-- Version: 2021-22 -->
+        <li><a target="_blank" href="https://www.lawrence.k12.ma.us/files/lps/LPSdistrictpolicies/CodeofconductbookSY21-22SY21-22FINAL-GoogleDocs.pdf">Code of Conduct Handbook</a></li> <!-- Version: 2021-22 -->
         <li><a target="_blank" href="https://docs.google.com/spreadsheets/d/1rrbimFsjyXHgPltcs5OwK623PthzIKMqPEzQwKIr7A4/view">Code of Conduct Mappings</a></li>
         <li><a target="_blank" href="https://docs.google.com/presentation/d/1xH_yR3av6L1n9v7PWLR2Y-79i4CsUVNukKM7JGx8d3A/view">Reporting Incidents in PowerSchool Deck (Information & Instructions)</a></li>
         <li><a target="_blank" href="https://drive.google.com/file/d/1KHFqIz0-i3GSSLLP3tepsyn0PAfJnJqu/preview">Reporting incidents in PowerSchool Training Video</a></li>
