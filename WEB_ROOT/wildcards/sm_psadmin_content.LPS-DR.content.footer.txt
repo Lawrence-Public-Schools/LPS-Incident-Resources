@@ -1,56 +1,409 @@
+<style>
+  #letterTemplates {
+    border-style: none;
+  }
+  
+  #incidentResources ul {
+    margin-left: 5px;
+  }
+  #incidentResources li {
+    list-style-type: none;
+    list-style-position: outside;
+  }
+  #incidentCodes h3 {
+    text-decoration: underline;
+    border: none;
+  }
+</style>
 <!-- create a hidden table with added rows -->
 <div id="LPS-DRCustomhiddentable" style="display: none;">
-<h2 class="toggle expanded" title="Click here to expand or collapse">Incident Resources</h2>
-<div id="incidentResources" class=""><div class="row">
-<p><a target="_blank" href="https://drive.google.com/file/d/13weNUksaVl3ZckHyQ3rJ7AwXL4hyd1Ix/view">Superintendent Directive Regarding Discipline</a></p>
-<p><a target="_blank" href="https://drive.google.com/file/d/13eQtb8ZQSa8QRxe-E0sdxNCJbRDc6vQ-/view">MOU with the Lawrence Police Department</a></p>
-<p><a target="_blank" href="https://drive.google.com/file/d/1u4sUmr2SOqOPy6SGtCyg_WyptTgIX7A7/view">Code of Conduct Handbook</a></p>
-<p><a target="_blank" href="https://docs.google.com/spreadsheets/d/1rrbimFsjyXHgPltcs5OwK623PthzIKMqPEzQwKIr7A4/view">Code of Conduct Mappings</a></p>
-<p><a target="_blank" href="https://docs.google.com/presentation/d/1xH_yR3av6L1n9v7PWLR2Y-79i4CsUVNukKM7JGx8d3A/view">Reporting Incidents in PowerSchool Deck (Information & Instructions)</a></p>
-<p><a target="_blank" href="https://drive.google.com/file/d/1KHFqIz0-i3GSSLLP3tepsyn0PAfJnJqu/preview">Reporting incidents in PowerSchool Training Video</a></p>
-<p><a target="_blank" href="https://drive.google.com/file/d/1MlZxGKdw5MYGgaxEt-mogJei_rs7nCya/preview">Incident Letters Training Video</a></p>
-<p>&nbsp;</p>
-<p></p>
-<p><a target="_blank" href="http://www.doe.mass.edu/infoservices/data/ssdr/">DESE SSDR Information</a></p>
-<p>&nbsp;</p>
-<p></p>
-<p><a target="_blank" href="https://test-webdisp.lawrence.k12.ma.us/admin/Dashboard.aspx">Old Discipline for REFERENCE ONLY</a></p>
-<p><a target="_blank" href="https://docs.google.com/spreadsheets/d/1dpE3PC-9q2FeZO6-8iKvl49geo8rVew7/edit#gid=2075961696">Old Discipline Code Mappings for REFERENCE ONLY</a></p>
-</div>
-</div>
+  <h2 class="toggle expanded lpsCollapsibleHeader" title="Click here to expand or collapse">Disciplinary Incident Resources</h2>
+  <div id="incidentResources" class="">
+    <div class="row">
+      <ul>
+        <!-- <li><a target="_blank" href="https://drive.google.com/file/d/13weNUksaVl3ZckHyQ3rJ7AwXL4hyd1Ix/view">Superintendent Directive Regarding Discipline</a></li>  *Now included in the Code of Conduct Book* -->
+        <li><a target="_blank" href="https://drive.google.com/file/d/13eQtb8ZQSa8QRxe-E0sdxNCJbRDc6vQ-/view">MOU with the Lawrence Police Department</a></li>
+        <li><a target="_blank" href="https://www.lawrence.k12.ma.us/files/lps/LPSdistrictpolicies/CodeofconductbookSY21-22SY21-22FINAL-GoogleDocs.pdf">Code of Conduct Handbook</a></li> <!-- Version: 2021-22 -->
+        <li><a target="_blank" href="https://docs.google.com/spreadsheets/d/1rrbimFsjyXHgPltcs5OwK623PthzIKMqPEzQwKIr7A4/view">Code of Conduct Mappings</a></li>
+        <li><a target="_blank" href="https://docs.google.com/presentation/d/1xH_yR3av6L1n9v7PWLR2Y-79i4CsUVNukKM7JGx8d3A/view">Reporting Disciplinary Incidents in PowerSchool Deck (Information & Instructions)</a></li>
+        <li><a target="_blank" href="https://drive.google.com/file/d/1KHFqIz0-i3GSSLLP3tepsyn0PAfJnJqu/preview">Reporting Disciplinary Incidents in PowerSchool Training Video</a></li>
+        <li><a target="_blank" href="https://docs.google.com/document/d/17PUss7Zfxq7qmkR6j273dBAbCLsyquSr-Fsft8d7g9s/view?usp=sharing">Discipline Letter Instructions</a></li>
+        <br />
+        <li><a target="_blank" href="http://www.doe.mass.edu/infoservices/data/ssdr/">DESE SSDR Information</a></li>
+        <br />
+        <li><a target="_blank" href="https://drive.google.com/file/d/1MlZxGKdw5MYGgaxEt-mogJei_rs7nCya/preview">Disciplinary Incident Letters Training Video - OUTDATED: REFERENCE ONLY</a></li>
+        <li><a target="_blank" href="https://test-webdisp.lawrence.k12.ma.us/admin/Dashboard.aspx">Discipline - OUTDATED: REFERENCE ONLY</a></li>
+        <li><a target="_blank" href="https://docs.google.com/spreadsheets/d/1dpE3PC-9q2FeZO6-8iKvl49geo8rVew7/edit#gid=2075961696">Discipline Code Mappings - OUTDATED: REFERENCE ONLY</a></li>
+      </ul>
+    </div>
+  </div>
+<!--|===============================|Letter Template Collapsible-Table|===============================|-->
+  <h2 id="letterTemplatesHeader" class="toggle expanded lpsCollapsibleHeader" title="Click here to expand or collapse">Disiplinary Incident Letter Templates</h2>
+  <div id="letterTemplates">
+    <div id="letterTemplatesTable" class="row">
+      <table class="grid">
+        <thead>
+          <th>English</th>
+          <th>Espa&ntilde;ol</th>
+        </thead>
+        <tbody>
+          <tr>
+            <td><a target="_blank" href="https://docs.google.com/document/d/1vQnFcEAFBlmBakbf_mfT83mn4sMJV7FB/view?usp=sharing">37H ½ Hearing Outcome - Expulsion</a></td>
+            <td><a target="_blank" href="https://docs.google.com/document/d/1KsKcGAvecbVqCR4Htl7PPK-_tgQCKorf/view?usp=sharing">37H ½ Resultado de la Audiencia - Expulsión</a></td>
+          </tr>
+          <tr>
+            <td><a target="_blank" href="https://docs.google.com/document/d/1EXFpRAMDKmkL_FSmY5-mgtzbh5OlcPek/view?usp=sharing">37H ½ Hearing Outcome - Suspension</a></td>
+            <td><a target="_blank" href="https://docs.google.com/document/d/1mUlLqlJe_dOImZnu_zLkHGTy19Sb6NpI/view?usp=sharing">37H ½ Resultado de la Audiencia - Suspensión</a></td>
+          </tr>
+          <tr>
+            <td><a target="_blank" href="https://docs.google.com/document/d/1UJcC2KhsATlmb02j_NVggbyGJWua70Go/view?usp=sharing">37H ½ Notice - Expulsion</a></td>
+            <td><a target="_blank" href="https://docs.google.com/document/d/1TudWraEd1d5_T-5hvrv4gH_sFoKhQYki/view?usp=sharing">37H ½ Aviso - Expulsión</a></td>
+          </tr>
+          <tr>
+            <td><a target="_blank" href="https://docs.google.com/document/d/1PQwbPP9B1ma8SiAgPTv-Fr0fBJu1LNB0/view?usp=sharing">37H ½ Notice - Suspension</a></td>
+            <td><a target="_blank" href="https://docs.google.com/document/d/1xRLHvObYogfjL-GlNo8Q0H_sqhyAo8uB/view?usp=sharing">37H ½ Aviso - Suspensión</a></td>
+          </tr>
+          <tr>
+            <td><a target="_blank" href="https://docs.google.com/document/d/1RSf6urFCw6e8q_gYFF-awCsttuda7SFC/view?usp=sharing">37H Hearing Notice</a></td>
+            <td><a target="_blank" href="https://docs.google.com/document/d/1HeJDwCShDScdbtVNvzcVJgMnEl0G_gAz/view?usp=sharing">37H Aviso de la Audiencia</a></td>
+          </tr>
+          <tr>
+            <td><a target="_blank" href="https://docs.google.com/document/d/1kMY0u5Fnb_yKbXsEwyK6hdTTQ2E7l5cN/view?usp=sharing">37H Hearing Outcome - Expel</a></td>
+            <td><a target="_blank" href="https://docs.google.com/document/d/1tTfTnAJRMONr98JAZVSpdoJoTHBlpNpY/view?usp=sharing">37H Resultado de la Audiencia - Expulsar</a></td>
+          </tr>
+          <tr>
+            <td><a target="_blank" href="https://docs.google.com/document/d/1BKgD-iCERTC5QX8R3QjLe9fKcg6UaNSt/view?usp=sharing">37H Hearing Outcome - Suspend</a></td>
+            <td><a target="_blank" href="https://docs.google.com/document/d/1_YwpAHQH9Fr9W5gDQun5tfIqCheC6UuD/view?usp=sharing">37H Resultado de la Audiencia - Suspender</a></td>
+          </tr>
+          <tr>
+            <td><a target="_blank" href="https://docs.google.com/document/d/1V1jdyv0RrHyaJSJdK7ldw1Yckf2yjuuR/view?usp=sharing">In School Suspension Letter</a></td>
+            <td><a target="_blank" href="https://docs.google.com/document/d/1svFeEfSknWh7TCR1G7lBszHSyksKjxAh/view?usp=sharing">Carta de Suspensión Escolar</a></td>
+          </tr>
+          <tr>
+            <td><a target="_blank" href="https://docs.google.com/document/d/1MEEnHUFwjiEmqJI2iPJk2nF03eZWYv74/view?usp=sharing">Long Term Suspension - Hearing Outcome</a></td>
+            <td><a target="_blank" href="https://docs.google.com/document/d/1QvTvm3_Si6gXO3onbp2b3UxX-r8I-DRi/view?usp=sharing">Suspensión de Largo Plazo  - Resultado de la Audiencia</a></td>
+          </tr>
+          <tr>
+            <td><a target="_blank" href="https://docs.google.com/document/d/19Frx_GiklGVqmVY5FT6ShKQKi6YIQNrt/view?usp=sharing">Long Term Suspension Notice</a></td>
+            <td><a target="_blank" href="https://docs.google.com/document/d/1-d0QlDNrGEujjpjpGix6mPd32kjnm819/view?usp=sharing">Aviso de Suspensión de Largo Plazo</a></td>
+          </tr>
+          <tr>
+            <td><a target="_blank" href="https://docs.google.com/document/d/10fV1H5JA0vpmgh3ZDGZZW9wfOaYiCL4A/view?usp=sharing">Short Term Suspension - Hearing Outcome</a></td>
+            <td><a target="_blank" href="https://docs.google.com/document/d/1CgPDIHQEURWyxqxbyDeTILSKs_WVyVri/view?usp=sharing">Suspensión de Corto Plazo - Resultado de la Audiencia</a></td>
+          </tr>
+          <tr>
+            <td><a target="_blank" href="https://docs.google.com/document/d/1LRvuBzigwFW3nZaLXYfqHiyjfqKEKUY3/view?usp=sharing">Short Term Suspension Notice</a></td>
+            <td><a target="_blank" href="https://docs.google.com/document/d/1ClEc8Noy_uXHumoOL15eK3DZxt4j5LMB/view?usp=sharing">Aviso de Suspensión de Corto Plazo</a></td>
+          </tr>
+          <!--  Links to Google Drive folder, keeping here just in case [ https://drive.google.com/drive/folders/ ]
+          <tr>
+            <td><a target="_blank" href="1qY2RWEjh5Xm0LbShR2DmCpbVXuwGjU2K">All Incident Letter Templates (English)</a></td>
+            <td><a target="_blank" href="1XO41n61zIzH-Ducn2nW5HSFdOAuMzo4y">All Incident Letter Templates (Espa&ntilde;ol)</a></td>
+          </tr>
+          -->
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <!--|===============================|Guidelines & Codes Reference (very long)|===============================|-->
+  <h2 id="incidentCodesHeader" class="toggle expanded lpsCollapsibleHeader" title="Click here to expand or collapse">Disiplinary Incident Guidelines & Codes</h2>
+  <div id="incidentCodes">
+    <div id="incidentCodesRow" class="row">
+      <h3 style="text">DISCIPLINE GUIDELINES AND CODES</h3>
+      <p>In accordance with the student’s right to due process (see, “Due Process”), the Lawrence Public Schools may discipline a student according to the following guidelines and discipline codes.</p>
+      <ul>
+        <li>
+          <h4>C code violations</h4> Classroom level violations and discipline is at the discretion of the educator, or in accordance with any schoolwide plan communicated with families,
+            and facilitated by the educator for which consequences do not include suspension. However, repeated, chronic or escalated C code violations may be elevated to the principal/designee for
+            possible reclassification to a D code violation, which may result in suspension.
+        </li>
+        <li>
+          <h4>M and D code violations</h4> Either mandatory (M) or discretionary (D) and discipline is facilitated by the school principal or designee.
+        </li>
+        <li>
+          <h4>Grade levels</h4> Unless otherwise noted, the code designations apply grades PK through 12.
+        </li>
+      </ul>
+      <p><b>C code offenses</b> are violations of lps policies and may require consequences to include verbal warning, verbal apology, letter of apology, parent notification,
+        student and/or parent conference, loss of privileges, detention, or another solution that supports restorative practices.</p>
+      <table id="codeTable-C" class="grid LPS-codeTable">
+        <thead>
+          <th>Code</th>
+          <th>Description</th>
+        </thead>
+        <tbody>
+          <tr>
+            <td class='codeDesc'>Violation of posted classroom, school, or bus rules</td>
+          </tr>
+          <tr>
+            <td class='codeDesc'>Failure to complete class work</td>
+          </tr>
+          <tr>
+            <td class='codeDesc'>Failure to complete homework (without an acceptable excuse or note from parent)</td>
+          </tr>
+          <tr>
+            <td class='codeDesc'>Lack of proper materials/not ready for daily assignments</td>
+          </tr>
+          <tr>
+            <td class='codeDesc'>Cheating on classroom tests or homework assignments</td>
+          </tr>
+          <tr>
+            <td class='codeDesc'>Inappropriate attire/out of uniform</td>
+          </tr>
+          <tr>
+            <td class='codeDesc'>Disrupve behavior or use of obscenities in the classroom or in any school setting or at any school sponsored event</td>
+          </tr>
+          <tr>
+            <td class='codeDesc'>Defiance or disrespect towards peers or staff</td>
+          </tr>
+          <tr>
+            <td class='codeDesc'>Possession or use of electronic devices/toys, including but not limited to: cell phones and other hand-held devices during regular school hours</td>
+          </tr>
+          <tr>
+            <td class='codeDesc'>Late for class/tardy without parent/guardian notification (middle school and high school)</td>
+          </tr>
+          <tr>
+            <td class='codeDesc'>Teasing of classmates or other children</td>
+          </tr>
+          <tr>
+            <td class='codeDesc'>Threatening classmates or other children (PK, elementary)</td>
+          </tr>
+          <tr>
+            <td class='codeDesc'>Verbal or physical aggressiveness towards peers or staff (PK-5);<br />Verbal aggressiveness toward peers or staff (6-12)</td>
+          </tr>
+          <tr>
+            <td class='codeDesc'>Destruction of classroom or school property</td>
+          </tr>
+        </tbody>
+      </table>
+      <p>
+        <b>D code offenses</b> are violations of LPS policy and/or state regulations and may require disciplinary consequences, including restorative practices, conferences,
+        possible denial of participation in school related activities, including graduation exercises, in-school or out of school suspension, in accordance to M.G.L. c. 71, §37H ¾:
+      </p>
+      <table id="codeTable-D" class="grid LPS-codeTable">
+        <thead>
+          <th>Code</th>
+          <th>Description</th>
+        </thead>
+        <tbody>
+          <tr>
+            <td class='codeDesc'>Violation of any Lawrence Public Schools policy, including, but not limited to, the Policy on Bullying in Schools, Drug-Free Schools Policy, Safe Schools Policy,
+            Tobacco-Free Schools Policy, and the Student Technology and Online Acceptable Use Policy and Guidelines</td>
+          </tr>
+          <tr>
+            <td class='codeDesc'>Discrimination against or harassment of another student or school personnel on the basis of, but not limited to race, color, sex, gender identity, homelessness,
+              national origin, religion, disability or sexual orientation (possible police notification).</td>
+          </tr>
+          <tr>
+            <td class='codeDesc'>Stealing and/or willful destruction of or personal property (possible police notification).</td>
+          </tr>
+          <tr>
+            <td class='codeDesc'>Possession of a dangerous weapon, or use of, or threatened use of any object as a weapon (grades K-5)(mandatory police notification).</td>
+          </tr>
+          <tr>
+            <td class='codeDesc'>Cheating on state assessments, plagiarism or forgery, including impersonating another person either verbally or in written form.</td>
+          </tr>
+          <tr>
+            <td class='codeDesc'>Fighting or any physical or sexual assault or act of violence committed against another student or school personnel (grades K-8) (possible police notification).</td>
+          </tr>
+          <tr>
+            <td class='codeDesc'>Unauthorized sounding of a fire alarm or tampering with defibrillators (grades K-5).</td>
+          </tr>
+          <tr>
+            <td class='codeDesc'>Intimidation (causing fear or harm) or extortion, or threat of intimidation, extortion, or hazing directed toward another student or
+              school personnel (grades K-5)(possible police notification).</td>
+          </tr>
+          <tr>
+            <td class='codeDesc'>Hazing directed toward another student (grades K-5)(possible police notification).</td>
+          </tr>
+          <tr>
+            <td class='codeDesc'>Being present in the company of a person the student knows is using or selling illicit drugs or alcohol, or is otherwise violating an item on the Code of Conduct
+              and who fails to remove themselves from the situation (posible police notification).</td>
+          </tr>
+          <tr>
+            <td class='codeDesc'>Bullying that is unrepsonsive to classroom interventions, or for which the scope is larger than the classroom, or retaliation related to a bullying incident,
+              reporting, or investigation (grades K-5)(possible police notification).</td>
+          </tr>
+          <tr>
+            <td class='codeDesc'>Aiding, abetting or encouraging bullying, fighting, or any act of violence, or making false allegation of bullying or retaliation or any act of violence.</td>
+          </tr>
+          <tr>
+            <td class='codeDesc'>Possession and/or use of tobacco products or related paraphernalia of any type including Electronic Nictotine Delivery Systems (ENDS)
+              regardless of whether they contain nicotine in any school facility, school bus, or on school grounds.</td>
+          </tr>
+          <tr>
+            <td class='codeDesc'>Creating a video or audio recording of another person in school or at a school-sponsored event, without obtaining the consent of the person whose image
+              or voice was recorded.</td>
+          </tr>
+          <tr>
+            <td class='codeDesc'>Targeted use of obscene, abusive or profane language or gestures, or rude or defiant behavior, any of which disrupts the educational process or school activity.</td>
+          </tr>
+          <tr>
+            <td class='codeDesc'>Failure to identify one's self truthfully upon request of any school personnel.</td>
+          </tr>
+          <tr>
+            <td class='codeDesc'>A pattern of defiant behaviour towards any school personnel or policy.</td>
+          </tr>
+          <tr>
+            <td class='codeDesc'>Behavior that endangers persons or property or substantially disrupts the educational process or school activity (possible police notification).</td>
+          </tr>
+          <tr>
+            <td class='codeDesc'>Giving off a strong odor of alcohol or marijuana (possible police notification).</td>
+          </tr>
+          <tr>
+            <td class='codeDesc'>Presence in unauthorized areas.</td>
+          </tr>
+          <tr>
+            <td class='codeDesc'>Persistent or excessive truancy and/or tardiness to class and class cutting, when other documented remedies have failed.</td>
+          </tr>
+          <tr>
+            <td class='codeDesc'>Violation of any criminal law of the CommonWealth of Massachusetts, including, but not limited to, gambling or stalking,
+              not already covered by these rules (possible police notification).</td>
+          </tr>
+          <tr>
+            <td class='codeDesc'>Unauthorized use of school materials, equipment or property.</td>
+          </tr>
+          <tr>
+            <td class='codeDesc'>Reselling food, refreshments or other items without permission of a school sanctioned sponsoring group.</td>
+          </tr>
+          <tr>
+            <td class='codeDesc'>Opening or propping open a school's exterior doors to let people in, to include but not limited to, late arrivals, visitors and deliveries.</td>
+          </tr>
+          <tr>
+            <td class='codeDesc'>Exiting school without permission.</td>
+          </tr>
+          <tr>
+            <td class='codeDesc'>Gang related activity.</td>
+          </tr>
+          <tr>
+            <td class='codeDesc'>Refusal to serve an in-school suspension.</td>
+          </tr>
+        </tbody>
+      </table>
+      <p>
+        <b>M code offenses</b> are violations of LPS policy and possibly state or federal laws and must be addressed utilizing either a disciplinary consequence previously outlined, or options
+          for suspension or expulsion, according to M.G.L. c. 71, §37H, §37H½ and §37H ¾. Some violations may include possible police involvment as indicated below. Police notification should be
+          carefully considered when there is a "real and substantial harm or threat of harm" to persons or property pursuant to the MOU.
+      </p>
+      <table id="codeTable-M" class="grid LPS-codeTable">
+        <thead>
+          <th>Code</th>
+          <th>Description</th>
+        </thead>
+        <tbody>
+          <tr>
+            <td class='codeDesc'>Possession of firearms (mandatory police notification).</td>
+          </tr>
+          <tr>
+            <td class='codeDesc'>Striking a teacher or other school personnel (grades 6-12)(possible police notification).</td>
+          </tr>
+          <tr>
+            <td class='codeDesc'>Possession, sale, distribution, intent to distribute, use or manufacture of controlled substances or alcohol (mandatory police notification).</td>
+          </tr>
+          <tr>
+            <td class='codeDesc'>Possession of a dangerous weapon, or use of, or threatened use of any object as a weapon (grades 6-12)(mandatory police notification).</td>
+          </tr>
+          <tr>
+            <td class='codeDesc'>Use of, or threatened use of a knife, including a pocket knife, as a weapon (mandatory police notification).</td>
+          </tr>
+          <tr>
+            <td class='codeDesc'>Fighting or any physical and/or sexual assault or act of violence committed against another student or any school personnel (grades 9-12) (possible police notification).</td>
+          </tr>
+          <tr>
+            <td class='codeDesc'>Unauthorized sounding of a fire alarm or tampering with defibrillatiors (grades 6-12).</td>
+          </tr>
+          <tr>
+            <td class='codeDesc'>Setting fires (mandatory police and fire department notification).</td>
+          </tr>
+          <tr>
+            <td class='codeDesc'>Intimidation (causing fear or harm) or extortion, or threat of intimidation, or extortion direct toward another student or school personnel (grades 6-12)
+              (possible police notification).</td>
+          </tr>
+          <tr>
+            <td class='codeDesc'>Hazing directed toward another student (grades 6-12)(possible police notification).</td>
+          </tr>
+          <tr>
+            <td class='codeDesc'>Bullying or retaliation related to a bullying incident, reporting, or investigation (grades 6-12)(possible police notification).</td>
+          </tr>
+          <tr>
+            <td class='codeDesc'>Being under the influence of controlled substances or alcoholic beverages, or suspicion of use of controlled substances, or in possession of any drug paraphernalia
+              (mandatory police notification for possession of paraphernalia).</td>
+          </tr>
+          <tr>
+            <td class='codeDesc'>Possession, distribution or intent to distribute, and/or the manufacture of sexually explicit images and/or video (possible police notification).</td>
+          </tr>
+        </tbody>
+      </table>
+      <p>
+        The term "dangerous weapon" shall include, but not be limited to, any type of firearm, knife, or martial arts equipment, explosive devices (including fireworks), or a facsimile of a
+          dangerous weapon. Any dangerous weapon in the possession of a student shall be removed from the student's custody, and any illegal weapon shall be turned over to the Lawrence Police Department.
+          All other weapons shall be returned to the student or parent/guardian at the discretion of the principal or his/her designee. There shall be notification of the possession of a weapon to
+          parents or guardians before the weapon is returned.
+      </p>
+      <p>
+        The term "controlled substances" shall include all controlled substances as defined in G.L. c.94C, including, but not limited to:
+          amphetamines, barbiturates, hallucinogens, marijuana, narcotics, or prescription drugs for which the student does not have a valid prescription
+      </p>
+      <p>
+        The possession, distribution or intent to distribute, and/or manufacture sexually explicit images and/or video of individuals under the age of 18 can be considered by law enforcement
+          as child pornography and may be an arrestable offense.
+      </p>
+    </div>
+  </div>
 </div>
 
 
 <script type="text/javascript">
-    function AddLPSDispResources() {
+  function AddLPSDispResources() {
+    if ( $j("#incidentBody").length > 0 ) 
+    {
+      var $incidentBox = $j('#myForm > div.box-round');
+      var $lpsHeaders = $j('.lpsCollapsibleHeader'); /* [(0)"Incident Resources", (1)"Incident Letter Templates", (2)"Incident Codes"] */
+      
+      /* Build by stacking on top of "Incident Description" */
+      $incidentBox.prepend( $j("#incidentCodes") );
+      $incidentBox.prepend( $lpsHeaders.eq(2) );
+      $incidentBox.prepend( $j("#letterTemplates") );
+      $incidentBox.prepend( $lpsHeaders.eq(1) );
+      $incidentBox.prepend( $j("#incidentResources") );
+      $incidentBox.prepend( $lpsHeaders.first() );
+      
+      /* Inserting code number cells dynamically to keep this file smaller and easier to update */
+      let letters = ['C','D','M'];
+      let $codeTables = $j("table.LPS-codeTable");
+      $codeTables.each(function(indx1, elmnt1) {
+        let $codeDescs = $j(elmnt1).find("td.codeDesc");
+        let codeLetter = letters[indx1];
+        $codeDescs.each(function(indx2, elmnt2) { 
+          let codeCell = "<td>" + codeLetter + (indx2+1) + "</td>";
+          $j(elmnt2).before(codeCell);
+        });
+      });
 
-if ($j("#incidentBody").length >0)
-{   
-   //$j("div#LPS-DRCustomhiddentable:first").remove(); //PS had double includes in older versions
-   $j("#myForm > div.box-round").prepend($j("div#LPS-DRCustomhiddentable div#incidentResources"));
-   $j("#myForm > div.box-round").prepend($j("div#LPS-DRCustomhiddentable h2"));
-   $j('#myForm > div.box-round > h2:first').each(function(){
-      hideCollapseClasses($j(this));
-      hideCollapseText($j(this));
-      hideCollapseTarget($j(this));
-   });
-   $j("div#LPS-DRCustomhiddentable").remove();
-} else {}
-};
+      /* Load custom tabs as collapsed */
+      $j('#myForm > div.box-round > h2.lpsCollapsibleHeader').each(function() {
+        hideCollapseClasses($j(this));
+        hideCollapseText($j(this));
+        hideCollapseTarget($j(this));
+      });
+      
+      $j("div#LPS-DRCustomhiddentable").remove();
+    }
+  };
 
-//debugger;
-if (!!LPSDRTEST )
-{
-    //console.log('LPSDRTEST not is null');
-    var LPSDRTEST = 0;
-} else {
-    //console.log('LPSDRTEST is null');
-    var LPSDRTEST = 1;
-    $j(document).ready(AddLPSDispResources);
-}
+  //debugger;
+  if (!!LPSDRTEST )
+  {
+      //console.log('LPSDRTEST not is null');
+      var LPSDRTEST = 0;
+  } else {
+      //console.log('LPSDRTEST is null');
+      var LPSDRTEST = 1;
+      $j(document).ready(AddLPSDispResources);
+  }
 
-//if (LPSDRTEST == 1)
-//{
-    //$j(document).ready(AddLPSDispResources);
-//}
+  //if (LPSDRTEST == 1)
+  //{
+      //$j(document).ready(AddLPSDispResources);
+  //}
 </script>
