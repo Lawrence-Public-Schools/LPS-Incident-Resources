@@ -115,7 +115,7 @@
         <li>
           <h4>C code violations</h4> Classroom level violations and discipline is at the discretion of the educator, or in accordance with any schoolwide plan communicated with families,
             and facilitated by the educator for which consequences do not include suspension. However, repeated, chronic or escalated C code violations may be elevated to the principal/designee for
-            possible reclassificaon to a D code violation, which may result in suspension.
+            possible reclassification to a D code violation, which may result in suspension.
         </li>
         <li>
           <h4>M and D code violations</h4> Either mandatory (M) or discretionary (D) and discipline is facilitated by the school principal or designee.
