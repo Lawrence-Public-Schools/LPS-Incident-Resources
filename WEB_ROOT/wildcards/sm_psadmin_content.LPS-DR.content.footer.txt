@@ -12,6 +12,7 @@
   }
   #incidentCodes h3 {
     text-decoration: underline;
+    border: none;
   }
 </style>
 <!-- create a hidden table with added rows -->
@@ -112,12 +113,12 @@
       <p>In accordance with the student’s right to due process (see, “Due Process”), the Lawrence Public Schools may discipline a student according to the following guidelines and discipline codes.</p>
       <ul>
         <li>
-          <h4>C code violations</h4> Are classroom level violations and discipline is at the discretion of the educator, or in accordance with any schoolwide plan communicated with families,
+          <h4>C code violations</h4> Classroom level violations and discipline is at the discretion of the educator, or in accordance with any schoolwide plan communicated with families,
             and facilitated by the educator for which consequences do not include suspension. However, repeated, chronic or escalated C code violations may be elevated to the principal/designee for
             possible reclassificaon to a D code violation, which may result in suspension.
         </li>
         <li>
-          <h4>M and D code violations</h4> Are either mandatory (M) or discretionary (D) and discipline is facilitated by the school principal or designee.
+          <h4>M and D code violations</h4> Either mandatory (M) or discretionary (D) and discipline is facilitated by the school principal or designee.
         </li>
         <li>
           <h4>Grade levels</h4> Unless otherwise noted, the code designations apply grades PK through 12.
@@ -171,7 +172,8 @@
             <td class='codeDesc'>Verbal or physical aggressiveness towards peers or staff (PK-5);<br />Verbal aggressiveness toward peers or staff (6-12)</td>
           </tr>
           <tr>
-            <td class='codeDesc'>Destruction of classroom or school property</td></tr>
+            <td class='codeDesc'>Destruction of classroom or school property</td>
+          </tr>
         </tbody>
       </table>
       <p>
