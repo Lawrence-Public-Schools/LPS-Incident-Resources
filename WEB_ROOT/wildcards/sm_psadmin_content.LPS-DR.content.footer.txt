@@ -106,7 +106,7 @@
     </div>
   </div>
   <!--|===============================|Guidelines & Codes Reference (very long)|===============================|-->
-  <h2 id="incidentCodesHeader" class="toggle expanded lpsCollapsibleHeader" title="Click here to expand or collapse">Disiplinary Incident Guidelines & Codes</h2>
+  <h2 id="incidentCodesHeader" class="toggle expanded lpsCollapsibleHeader" title="Click here to expand or collapse">Disiplinary Incident Guidelines and Codes</h2>
   <div id="incidentCodes">
     <div id="incidentCodesRow" class="row">
       <h3 style="text">DISCIPLINE GUIDELINES AND CODES</h3>
