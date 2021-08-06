@@ -113,17 +113,18 @@
       <p>In accordance with the student’s right to due process (see, “Due Process”), the Lawrence Public Schools may discipline a student according to the following guidelines and discipline codes.</p>
       <ul>
         <li>
-          <h4>C code violations</h4> Classroom level violations and discipline is at the discretion of the educator, or in accordance with any schoolwide plan communicated with families,
+          <h4>C code violations</h4><p> Classroom level violations and discipline is at the discretion of the educator, or in accordance with any schoolwide plan communicated with families,
             and facilitated by the educator for which consequences do not include suspension. However, repeated, chronic or escalated C code violations may be elevated to the principal/designee for
-            possible reclassification to a D code violation, which may result in suspension.
+            possible reclassification to a D code violation, which may result in suspension.</p>
         </li>
         <li>
-          <h4>M and D code violations</h4> Either mandatory (M) or discretionary (D) and discipline is facilitated by the school principal or designee.
+          <h4>M and D code violations</h4><p> Either mandatory (M) or discretionary (D) and discipline is facilitated by the school principal or designee.</p>
         </li>
         <li>
-          <h4>Grade levels</h4> Unless otherwise noted, the code designations apply grades PK through 12.
+          <h4>Grade levels</h4><p> Unless otherwise noted, the code designations apply grades PK through 12.</p>
         </li>
       </ul>
+      <br />
       <p><b>C code offenses</b> are violations of lps policies and may require consequences to include verbal warning, verbal apology, letter of apology, parent notification,
         student and/or parent conference, loss of privileges, detention, or another solution that supports restorative practices.</p>
       <table id="codeTable-C" class="grid LPS-codeTable">
@@ -176,6 +177,7 @@
           </tr>
         </tbody>
       </table>
+      <br />
       <p>
         <b>D code offenses</b> are violations of LPS policy and/or state regulations and may require disciplinary consequences, including restorative practices, conferences,
         possible denial of participation in school related activities, including graduation exercises, in-school or out of school suspension, in accordance to M.G.L. c. 71, §37H ¾:
@@ -280,6 +282,7 @@
           </tr>
         </tbody>
       </table>
+      <br />
       <p>
         <b>M code offenses</b> are violations of LPS policy and possibly state or federal laws and must be addressed utilizing either a disciplinary consequence previously outlined, or options
           for suspension or expulsion, according to M.G.L. c. 71, §37H, §37H½ and §37H ¾. Some violations may include possible police involvment as indicated below. Police notification should be
@@ -334,6 +337,7 @@
           </tr>
         </tbody>
       </table>
+      <br />
       <p>
         The term "dangerous weapon" shall include, but not be limited to, any type of firearm, knife, or martial arts equipment, explosive devices (including fireworks), or a facsimile of a
           dangerous weapon. Any dangerous weapon in the possession of a student shall be removed from the student's custody, and any illegal weapon shall be turned over to the Lawrence Police Department.
