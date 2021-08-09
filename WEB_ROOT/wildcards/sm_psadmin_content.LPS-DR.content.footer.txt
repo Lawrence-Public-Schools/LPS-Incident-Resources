@@ -164,16 +164,37 @@
             <td class='codeDesc'>Late for class/tardy without parent/guardian notification (middle school and high school)</td>
           </tr>
           <tr>
-            <td class='codeDesc'>Teasing of classmates or other children</td>
+            <td class='codeDesc'>Teasing and intimidation of classmates or other children (Physical)</td> <!-- C11.1 -->
           </tr>
           <tr>
-            <td class='codeDesc'>Threatening classmates or other children (PK, elementary)</td>
+            <td class='codeDesc'>Teasing and intimidation of classmates or other children (Verbal)</td> <!-- C11.2 -->
+          </tr>
+          <tr>
+            <td class='codeDesc'>Teasing and intimidation of classmates or other children (Written)</td> <!-- C11.3 -->
+          </tr>
+          <tr>
+            <td class='codeDesc'>Teasing and intimidation of classmates or other children (Electronic)</td> <!-- C11.4 -->
+          </tr>
+          <tr>
+            <td class='codeDesc'>Threatening classmates or other children (PK, elementary) (Physical)</td> <!-- C12.1 -->
+          </tr>
+          <tr>
+            <td class='codeDesc'>Threatening classmates or other children (PK, elementary) (Verbal)</td> <!-- C12.2 -->
+          </tr>
+          <tr>
+            <td class='codeDesc'>Threatening classmates or other children (PK, elementary) (Written)</td> <!-- C12.3 -->
+          </tr>
+          <tr>
+            <td class='codeDesc'>Threatening classmates or other children (PK, elementary) (Electronic)</td> <!-- C12.4 -->
           </tr>
           <tr>
             <td class='codeDesc'>Verbal or physical aggressiveness towards peers or staff (PK-5);<br />Verbal aggressiveness toward peers or staff (6-12)</td>
           </tr>
           <tr>
-            <td class='codeDesc'>Destruction of classroom or school property</td>
+            <td class='codeDesc'>Destruction of classroom or school property (Vandalism of School Property)</td> <!-- C14.1 -->
+          </tr>
+          <tr>
+            <td class='codeDesc'>Destruction of classroom or school property (Vandalism of Personal Property)</td> <!-- C14.2 -->
           </tr>
         </tbody>
       </table>
@@ -197,7 +218,13 @@
               national origin, religion, disability or sexual orientation (possible police notification).</td>
           </tr>
           <tr>
-            <td class='codeDesc'>Stealing and/or willful destruction of or personal property (possible police notification).</td>
+            <td class='codeDesc'>Stealing and/or willful destruction of school or personal property (possible police notification). (Theft)</td> <!-- D3.1 -->
+          </tr>
+          <tr>
+            <td class='codeDesc'>Stealing and/or willful destruction of school or personal property (possible police notification). (Vandalism of School Property)</td> <!-- D3.2 -->
+          </tr>
+          <tr>
+            <td class='codeDesc'>Stealing and/or willful destruction of school or personal property (possible police notification). (Vandalism of Personal Property)</td> <!-- D3.3 -->
           </tr>
           <tr>
             <td class='codeDesc'>Possession of a dangerous weapon, or use of, or threatened use of any object as a weapon (grades K-5)(mandatory police notification).</td>
@@ -212,11 +239,32 @@
             <td class='codeDesc'>Unauthorized sounding of a fire alarm or tampering with defibrillators (grades K-5).</td>
           </tr>
           <tr>
-            <td class='codeDesc'>Intimidation (causing fear or harm) or extortion, or threat of intimidation, extortion, or hazing directed toward another student or
-              school personnel (grades K-5)(possible police notification).</td>
+            <td class='codeDesc'>Intimidation (causing fear or harm) or extortion, or threat of intimidation, extortion, or hazing directed toward another student or school personnel
+              (grades K-5) (possible police notification). (Physical)</td> <!-- D8.1 -->
           </tr>
           <tr>
-            <td class='codeDesc'>Hazing directed toward another student (grades K-5)(possible police notification).</td>
+            <td class='codeDesc'>Intimidation (causing fear or harm) or extortion, or threat of intimidation, extortion, or hazing directed toward another student or school personnel
+              (grades K-5) (possible police notification). (Verbal)</td> <!-- D8.2 -->
+          </tr>
+          <tr>
+            <td class='codeDesc'>Intimidation (causing fear or harm) or extortion, or threat of intimidation, extortion, or hazing directed toward another student or school personnel
+              (grades K-5) (possible police notification). (Written)</td> <!-- D8.3 -->
+          </tr>
+          <tr>
+            <td class='codeDesc'>Intimidation (causing fear or harm) or extortion, or threat of intimidation, extortion, or hazing directed toward another student or school personnel
+              (grades K-5) (possible police notification). (Electronic)</td> <!-- D8.4 -->
+          </tr>
+          <tr>
+            <td class='codeDesc'>Hazing directed toward another student (grades K-5) (possible police notification). (Physical)</td> <!-- D9.1 -->
+          </tr>
+          <tr>
+            <td class='codeDesc'>Hazing directed toward another student (grades K-5) (possible police notification). (Verbal)</td> <!-- D9.2 -->
+          </tr>
+          <tr>
+            <td class='codeDesc'>Hazing directed toward another student (grades K-5) (possible police notification). (Written)</td> <!-- D9.3 -->
+          </tr>
+          <tr>
+            <td class='codeDesc'>Hazing directed toward another student (grades K-5) (possible police notification). (Electronic)</td> <!-- D9.4 -->
           </tr>
           <tr>
             <td class='codeDesc'>Being present in the company of a person the student knows is using or selling illicit drugs or alcohol, or is otherwise violating an item on the Code of Conduct
@@ -230,8 +278,12 @@
             <td class='codeDesc'>Aiding, abetting or encouraging bullying, fighting, or any act of violence, or making false allegation of bullying or retaliation or any act of violence.</td>
           </tr>
           <tr>
-            <td class='codeDesc'>Possession and/or use of tobacco products or related paraphernalia of any type including Electronic Nictotine Delivery Systems (ENDS)
-              regardless of whether they contain nicotine in any school facility, school bus, or on school grounds.</td>
+            <td class='codeDesc'>Possession and/or use of tobacco products or related paraphernalia of any type including Electronic Nicotine Delivery Systems (ENDS)
+              regardless of whether they contain nicotine in any school facility, school bus, or on school grounds. (Possession of Tobacco)</td> <!-- D13.1 -->
+          </tr>
+          <tr>
+            <td class='codeDesc'>Possession and/or use of tobacco products or related paraphernalia of any type including Electronic Nicotine Delivery Systems (ENDS)
+              regardless of whether they contain nicotine in any school facility, school bus, or on school grounds. (Possession of Medication)</td> <!-- D13.2 -->
           </tr>
           <tr>
             <td class='codeDesc'>Creating a video or audio recording of another person in school or at a school-sponsored event, without obtaining the consent of the person whose image
@@ -301,16 +353,42 @@
             <td class='codeDesc'>Striking a teacher or other school personnel (grades 6-12)(possible police notification).</td>
           </tr>
           <tr>
-            <td class='codeDesc'>Possession, sale, distribution, intent to distribute, use or manufacture of controlled substances or alcohol (mandatory police notification).</td>
+            <td class='codeDesc'>Possession, sale, distribution, intent to distribute, use or manufacture of controlled substances or alcohol
+              (mandatory police notification). (Possession of Alcohol)</td> <!-- M3.1 -->
+          </tr>
+          <tr>
+            <td class='codeDesc'>Possession, sale, distribution, intent to distribute, use or manufacture of controlled substances or alcohol
+              (mandatory police notification). (Possession of Medication)</td> <!-- M3.2 -->
           </tr>
           <tr>
             <td class='codeDesc'>Possession of a dangerous weapon, or use of, or threatened use of any object as a weapon (grades 6-12)(mandatory police notification).</td>
           </tr>
           <tr>
-            <td class='codeDesc'>Use of, or threatened use of a knife, including a pocket knife, as a weapon (mandatory police notification).</td>
+            <td class='codeDesc'>Use of, or threatened use of a knife, including a pocket knife, as a weapon (mandatory police notification). (Battery)</td> <!-- M5.1 -->
           </tr>
           <tr>
-            <td class='codeDesc'>Fighting or any physical and/or sexual assault or act of violence committed against another student or any school personnel (grades 9-12) (possible police notification).</td>
+            <td class='codeDesc'>Use of, or threatened use of a knife, including a pocket knife, as a weapon (mandatory police notification). (Physical)</td> <!-- M5.2 -->
+          </tr>
+          <tr>
+            <td class='codeDesc'>Use of, or threatened use of a knife, including a pocket knife, as a weapon (mandatory police notification). (Verbal)</td> <!-- M5.3 -->
+          </tr>
+          <tr>
+            <td class='codeDesc'>Use of, or threatened use of a knife, including a pocket knife, as a weapon (mandatory police notification). (Written)</td> <!-- M5.4 -->
+          </tr>
+          <tr>
+            <td class='codeDesc'>Use of, or threatened use of a knife, including a pocket knife, as a weapon (mandatory police notification). (Electronic)</td> <!-- M5.5 -->
+          </tr>
+          <tr>
+            <td class='codeDesc'>Fighting or any physical and/or sexual assault or act of violence committed against another student or any school personnel (grades 9-12)
+              (possible police notification). (Fighting (Mutual))</td> <!-- M6.1 -->
+          </tr>
+          <tr>
+            <td class='codeDesc'>Fighting or any physical and/or sexual assault or act of violence committed against another student or any school personnel (grades 9-12)
+              (possible police notification). (Sexual Harassment)</td> <!-- M6.2 -->
+          </tr>
+          <tr>
+            <td class='codeDesc'>Fighting or any physical and/or sexual assault or act of violence committed against another student or any school personnel (grades 9-12)
+              (possible police notification). (Harrassment/NonSexual)</td> <!-- M6.3 -->
           </tr>
           <tr>
             <td class='codeDesc'>Unauthorized sounding of a fire alarm or tampering with defibrillatiors (grades 6-12).</td>
@@ -319,21 +397,49 @@
             <td class='codeDesc'>Setting fires (mandatory police and fire department notification).</td>
           </tr>
           <tr>
-            <td class='codeDesc'>Intimidation (causing fear or harm) or extortion, or threat of intimidation, or extortion direct toward another student or school personnel (grades 6-12)
-              (possible police notification).</td>
+            <td class='codeDesc'>Intimidation (causing fear or harm) or extortion, or threat of intimidation, or extortion directed toward another student or school personnel (grades 6-12)
+              (possible police notification). (Physical)</td> <!-- M9.1 -->
           </tr>
           <tr>
-            <td class='codeDesc'>Hazing directed toward another student (grades 6-12)(possible police notification).</td>
+            <td class='codeDesc'>Intimidation (causing fear or harm) or extortion, or threat of intimidation, or extortion directed toward another student or school personnel (grades 6-12)
+              (possible police notification). (Verbal)</td> <!-- M9.2 -->
+          </tr>
+          <tr>
+            <td class='codeDesc'>Intimidation (causing fear or harm) or extortion, or threat of intimidation, or extortion directed toward another student or school personnel (grades 6-12)
+              (possible police notification). (Written)</td> <!-- M9.3 -->
+          </tr>
+          <tr>
+            <td class='codeDesc'>Intimidation (causing fear or harm) or extortion, or threat of intimidation, or extortion directed toward another student or school personnel (grades 6-12)
+              (possible police notification). (Electronic)</td> <!-- M9.4 -->
+          </tr>
+          <tr>
+            <td class='codeDesc'>Hazing directed toward another student (grades 6-12) (possible police notification). (Physical)</td> <!-- M10.1 -->
+          </tr>
+          <tr>
+            <td class='codeDesc'>Hazing directed toward another student (grades 6-12) (possible police notification). (Verbal)</td> <!-- M10.2 -->
+          </tr>
+          <tr>
+            <td class='codeDesc'>Hazing directed toward another student (grades 6-12) (possible police notification). (Written)</td> <!-- M10.3 -->
+          </tr>
+          <tr>
+            <td class='codeDesc'>Hazing directed toward another student (grades 6-12) (possible police notification). (Electronic)</td> <!-- M10.4 -->
           </tr>
           <tr>
             <td class='codeDesc'>Bullying or retaliation related to a bullying incident, reporting, or investigation (grades 6-12)(possible police notification).</td>
           </tr>
           <tr>
             <td class='codeDesc'>Being under the influence of controlled substances or alcoholic beverages, or suspicion of use of controlled substances, or in possession of any drug paraphernalia
-              (mandatory police notification for possession of paraphernalia).</td>
+              (mandatory police notification for possession of drug paraphernalia). (Possession of Alchohol)</td> <!-- M12.1 -->
           </tr>
           <tr>
-            <td class='codeDesc'>Possession, distribution or intent to distribute, and/or the manufacture of sexually explicit images and/or video (possible police notification).</td>
+            <td class='codeDesc'>Being under the influence of controlled substances or alcoholic beverages, or suspicion of use of controlled substances, or in possession of any drug paraphernalia
+              (mandatory police notification for possession of drug paraphernalia). (Possession of Medicine)</td> <!-- M12.2 -->
+          </tr>
+          <tr>  <!-- M13.1 -->
+            <td class='codeDesc'>Possession, distribution or intent to distribute, and/or the manufacture of sexually explicit images and/or video (possible police notification). (Sexual Harrassment)</td>
+          </tr>
+          <tr>  <!-- M13.2 -->
+            <td class='codeDesc'>Possession, distribution or intent to distribute, and/or the manufacture of sexually explicit images and/or video (possible police notification). (Sexual Offenses)</td>
           </tr>
         </tbody>
       </table>
@@ -358,6 +464,7 @@
 
 
 <script type="text/javascript">
+  
   function AddLPSDispResources() {
     if ( $j("#incidentBody").length > 0 ) 
     {
@@ -378,9 +485,68 @@
       $codeTables.each(function(indx1, elmnt1) {
         let $codeDescs = $j(elmnt1).find("td.codeDesc");
         let codeLetter = letters[indx1];
-        $codeDescs.each(function(indx2, elmnt2) { 
-          let codeCell = "<td>" + codeLetter + (indx2+1) + "</td>";
-          $j(elmnt2).before(codeCell);
+        let codeNum_i = 1;
+        let codeNum_j = 1;
+        $codeDescs.each(function(indx2, elmnt2) {
+          let iCode = codeLetter + codeNum_i;
+          
+          function createSubCode (max) {
+            iCode += ("." + codeNum_j);
+            if( codeNum_j < max) {
+              codeNum_i--;
+              codeNum_j++;
+            } else { codeNum_j = 1; }
+            return;
+          };
+
+          switch(iCode) {
+            case 'C11':
+              createSubCode(4);
+              break;
+            case 'C12':
+              createSubCode(4);
+              break;
+            case 'C14':
+              createSubCode(2);
+              break;
+            case 'D3':
+              createSubCode(3);
+              break;
+            case 'D8':
+              createSubCode(4);
+              break;
+            case 'D9':
+              createSubCode(4);
+              break;
+            case 'D13':
+              createSubCode(2);
+              break;
+            case 'M3':
+              createSubCode(2);
+              break;
+            case 'M5':
+              createSubCode(5);
+              break;
+            case 'M6':
+              createSubCode(3);
+              break;
+            case 'M9':
+              createSubCode(4);
+              break;
+            case 'M10':
+              createSubCode(4);
+              break;
+            case 'M12':
+              createSubCode(2);
+              break;
+            case 'M13':
+              createSubCode(2);
+              break;
+            default:
+              break;
+          }
+          $j(elmnt2).before("<td>" + iCode + "</td>");
+          codeNum_i++;
         });
       });
 
@@ -394,6 +560,8 @@
       $j("div#LPS-DRCustomhiddentable").remove();
     }
   };
+  
+  
 
   //debugger;
   if (!!LPSDRTEST )
