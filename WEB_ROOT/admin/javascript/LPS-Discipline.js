@@ -17,7 +17,7 @@ function ModLPSDispResources() {
           codeNum_j++;
         } else { codeNum_j = 1; }
         return;
-      };
+      }
 
       switch(iCode) {
         case 'C11':
@@ -85,7 +85,7 @@ function AddLPSDispResources() {
     $incidentBox.prepend( $j("#incidentResources") );
     $incidentBox.prepend( $lpsHeaders.first() );
     
-    ModLPSDispResources()
+    ModLPSDispResources();
     
     /* Load custom tabs as collapsed */
     $j('#myForm > div.box-round > h2.lpsCollapsibleHeader').each(function() {
@@ -96,9 +96,9 @@ function AddLPSDispResources() {
     
     $j("div#LPS-DRCustomhiddentable").remove();
   }
-  If ( $j("#content-main > h1:contains('Incident Management')").length > 0 )
+  if ( $j("div#content-main > h1:contains('Incident Management')").length > 0 )
   {
-    var $incidentBox = $j('#content-main');
+    var $incidentBox = $j("h1:contains('Incident Management') + div");
     var $lpsHeaders = $j('.lpsCollapsibleHeader'); /* [(0)"Incident Resources", (1)"Incident Letter Templates", (2)"Incident Codes"] */
     
     /* Build by stacking on top of "Incident Description" */
@@ -109,10 +109,10 @@ function AddLPSDispResources() {
     $incidentBox.prepend( $j("#incidentResources") );
     $incidentBox.prepend( $lpsHeaders.first() );
     
-    ModLPSDispResources()
+    ModLPSDispResources();
     
     /* Load custom tabs as collapsed */
-    $j('#content-main > h2.lpsCollapsibleHeader').each(function() {
+    $j('#content-main > h1 > h2.lpsCollapsibleHeader').each(function() {
       hideCollapseClasses($j(this));
       hideCollapseText($j(this));
       hideCollapseTarget($j(this));
@@ -121,7 +121,7 @@ function AddLPSDispResources() {
     $j("div#LPS-DRCustomhiddentable").remove();
   }
     
-};
+}
 
 
 
