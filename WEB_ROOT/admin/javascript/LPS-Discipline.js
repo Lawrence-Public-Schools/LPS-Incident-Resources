@@ -126,7 +126,9 @@ function AddLPSDispResources() {
   }
   else if ( $j("div#content-main > h1:contains('Incident List')").length > 0 )
   {
-    var $incidentBox = $j("div#content-main > div.box-round.incident-collapsible");
+    $j("div#content-main > div.box-round.incident-collapsible").before( '<div id="LPS-DRCustom">')
+    
+    var $incidentBox = $j("div#content-main > div#LPS-DRCustom");
     var $lpsHeaders = $j('.lpsCollapsibleHeader'); /* [(0)"Incident Resources", (1)"Incident Letter Templates", (2)"Incident Codes"] */
     
     /* Build by stacking on top of "Incident Description" */
@@ -141,7 +143,7 @@ function AddLPSDispResources() {
     
     /* Load custom tabs as collapsed */
     
-    $j('div#content-main > div.incident-collapsible > h2.lpsCollapsibleHeader').each(function() {
+    $j('div#content-main > div#LPS-DRCustom > h2.lpsCollapsibleHeader').each(function() {
       hideCollapseClasses($j(this));
       hideCollapseText($j(this));
       hideCollapseTarget($j(this));
