@@ -71,6 +71,10 @@ function ModLPSDispResources() {
   });
 }
 
+function RemoveLPSDispResources() {
+  $j("div#LPS-DRCustomhiddentable").remove();
+}
+
 function AddLPSDispResources() {
   if ( $j("#incidentBody").length > 0 ) 
   {
@@ -96,7 +100,7 @@ function AddLPSDispResources() {
     
     $j("div#LPS-DRCustomhiddentable").remove();
   }
-  if ( $j("div#content-main > h1:contains('Incident Management')").length > 0 )
+  else if ( $j("div#content-main > h1:contains('Incident Management')").length > 0 )
   {
     var $incidentBox = $j("h1:contains('Incident Management') + div");
     var $lpsHeaders = $j('.lpsCollapsibleHeader'); /* [(0)"Incident Resources", (1)"Incident Letter Templates", (2)"Incident Codes"] */
@@ -112,13 +116,16 @@ function AddLPSDispResources() {
     ModLPSDispResources();
     
     /* Load custom tabs as collapsed */
-    $j('#content-main > h1 > h2.lpsCollapsibleHeader').each(function() {
+    $j('div#content-main > div.ng-cloak > h2.lpsCollapsibleHeader').each(function() {
       hideCollapseClasses($j(this));
       hideCollapseText($j(this));
       hideCollapseTarget($j(this));
     });
     
     $j("div#LPS-DRCustomhiddentable").remove();
+  }
+  else {
+    $j(document).ready(RemoveLPSDispResources);
   }
     
 }
