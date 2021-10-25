@@ -124,6 +124,56 @@ function AddLPSDispResources() {
     
     $j("div#LPS-DRCustomhiddentable").remove();
   }
+  else if ( $j("div#content-main > h1:contains('Incident List')").length > 0 )
+  {
+    var $incidentBox = $j("div#content-main > div.box-round.incident-collapsible");
+    var $lpsHeaders = $j('.lpsCollapsibleHeader'); /* [(0)"Incident Resources", (1)"Incident Letter Templates", (2)"Incident Codes"] */
+    
+    /* Build by stacking on top of "Incident Description" */
+    $incidentBox.prepend( $j("#incidentCodes") );
+    $incidentBox.prepend( $lpsHeaders.eq(2) );
+    $incidentBox.prepend( $j("#letterTemplates") );
+    $incidentBox.prepend( $lpsHeaders.eq(1) );
+    $incidentBox.prepend( $j("#incidentResources") );
+    $incidentBox.prepend( $lpsHeaders.first() );
+    
+    ModLPSDispResources();
+    
+    /* Load custom tabs as collapsed */
+    
+    $j('div#content-main > div.incident-collapsible > h2.lpsCollapsibleHeader').each(function() {
+      hideCollapseClasses($j(this));
+      hideCollapseText($j(this));
+      hideCollapseTarget($j(this));
+    });
+    
+    $j("div#LPS-DRCustomhiddentable").remove();
+  }
+  else if ( $j("div#content-main > h1:contains('Incidents Summary')").length > 0 )
+  {
+    var $incidentBox = $j("div#content-main > form#rptFilters");
+    var $lpsHeaders = $j('.lpsCollapsibleHeader'); /* [(0)"Incident Resources", (1)"Incident Letter Templates", (2)"Incident Codes"] */
+    
+    /* Build by stacking on top of "Incident Description" */
+    $incidentBox.prepend( $j("#incidentCodes") );
+    $incidentBox.prepend( $lpsHeaders.eq(2) );
+    $incidentBox.prepend( $j("#letterTemplates") );
+    $incidentBox.prepend( $lpsHeaders.eq(1) );
+    $incidentBox.prepend( $j("#incidentResources") );
+    $incidentBox.prepend( $lpsHeaders.first() );
+    
+    ModLPSDispResources();
+    
+    /* Load custom tabs as collapsed */
+    
+    $j('div#content-main > form#rptFilters > h2.lpsCollapsibleHeader').each(function() {
+      hideCollapseClasses($j(this));
+      hideCollapseText($j(this));
+      hideCollapseTarget($j(this));
+    });
+    
+    $j("div#LPS-DRCustomhiddentable").remove();
+  }
   else {
     $j(document).ready(RemoveLPSDispResources);
   }
