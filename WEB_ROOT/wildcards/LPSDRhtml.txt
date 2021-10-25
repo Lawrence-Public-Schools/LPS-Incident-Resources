@@ -18,7 +18,7 @@
 <script src="/admin/javascript/LPS-Discipline.js"></script>
 <!-- create a hidden table with added rows -->
 <div id="LPS-DRCustomhiddentable" style="display: none;">
-  <h2 class="toggle expanded lpsCollapsibleHeader" title="Click here to expand or collapse">Disciplinary Incident Resources</h2>
+  <h2 class="toggle expanded lpsCollapsibleHeader"><u>Disciplinary Incident Resources</u> <small>(Click to Expand/Collapse)</small></h2>
   <div id="incidentResources" class="">
     <div class="row">
       <ul>
@@ -39,7 +39,7 @@
     </div>
   </div>
 <!--|===============================|Letter Template Collapsible-Table|===============================|-->
-  <h2 id="letterTemplatesHeader" class="toggle expanded lpsCollapsibleHeader" title="Click here to expand or collapse">Disiplinary Incident Letter Templates</h2>
+  <h2 id="letterTemplatesHeader" class="toggle expanded lpsCollapsibleHeader" ><u>Disiplinary Incident Letter Templates</u> <small>(Click to Expand/Collapse)</small></h2>
   <div id="letterTemplates">
     <div id="letterTemplatesTable" class="row">
       <table class="grid">
@@ -107,7 +107,7 @@
     </div>
   </div>
   <!--|===============================|Guidelines & Codes Reference (very long)|===============================|-->
-  <h2 id="incidentCodesHeader" class="toggle expanded lpsCollapsibleHeader" title="Click here to expand or collapse">Disiplinary Incident Guidelines and Codes</h2>
+  <h2 id="incidentCodesHeader" class="toggle expanded lpsCollapsibleHeader"><u>Disiplinary Incident Guidelines and Codes</u> <small>(Click to Expand/Collapse)</small></h2>
   <div id="incidentCodes">
     <div id="incidentCodesRow" class="row">
       <h3 style="text">DISCIPLINE GUIDELINES AND CODES</h3>
@@ -462,5 +462,3 @@
     </div>
   </div>
 </div>
-
-
