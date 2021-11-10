@@ -15,7 +15,7 @@
     border: none;
   }
 </style>
-<script src="/admin/javascript/LPS-Discipline.js"></script>
+<script defer src="/admin/javascript/LPS-Discipline.js"></script>
 <!-- create a hidden table with added rows -->
 <div id="LPS-DRCustomhiddentable" style="display: none;">
   <h2 class="toggle expanded lpsCollapsibleHeader"><u>Disciplinary Incident Resources</u> <small>(Click to Expand/Collapse)</small></h2>
