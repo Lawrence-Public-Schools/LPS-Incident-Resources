@@ -71,128 +71,53 @@ function ModLPSDispResources() {
   });
 }
 
-function RemoveLPSDispResources() {
-  $j("div#LPS-DRCustomhiddentable").remove();
+function prepResources($target) {
+    let $lpsHeaders = $j('.lpsCollapsibleHeader'); /* [(0)"Incident Resources", (1)"Incident Letter Templates", (2)"Incident Codes"] */
+    
+    
+    /* Build by stacking on top of "Incident Description" */
+    $target.prepend( $j("#incidentCodes") );
+    $target.prepend( $lpsHeaders.eq(2) );
+    $target.prepend( $j("#letterTemplates") );
+    $target.prepend( $lpsHeaders.eq(1) );
+    $target.prepend( $j("#incidentResources") );
+    $target.prepend( $lpsHeaders.first() );
+    
+    $j("div#LPS-DRCustomhiddentable").remove();
+    ModLPSDispResources();
 }
 
 function AddLPSDispResources() {
-  if ( $j("#incidentBody").length > 0 ) 
-  {
-    var $incidentBox = $j('#myForm > div.box-round');
-    var $lpsHeaders = $j('.lpsCollapsibleHeader'); /* [(0)"Incident Resources", (1)"Incident Letter Templates", (2)"Incident Codes"] */
+  var $incidentBox;
+  
+  if ( $j("#incidentBody").length > 0 ) {
+    $incidentBox = $j('#myForm > div.box-round');
+    prepResources($incidentBox);
     
-    /* Build by stacking on top of "Incident Description" */
-    $incidentBox.prepend( $j("#incidentCodes") );
-    $incidentBox.prepend( $lpsHeaders.eq(2) );
-    $incidentBox.prepend( $j("#letterTemplates") );
-    $incidentBox.prepend( $lpsHeaders.eq(1) );
-    $incidentBox.prepend( $j("#incidentResources") );
-    $incidentBox.prepend( $lpsHeaders.first() );
+  } else if ( $j("div#content-main > h1:contains('Incident Management')").length > 0 ) {
+    $incidentBox = $j("h1:contains('Incident Management') + div");
+    prepResources($incidentBox);
     
-    ModLPSDispResources();
+  } else if ( $j("div#content-main > h1:contains('Incident List')").length > 0 ) {
+    $j("div#content-main > div.box-round.incident-collapsible").before( '<div id="LPS-DRCustom">');
+    $incidentBox = $j("div#content-main > div#LPS-DRCustom");
+    prepResources($incidentBox);
     
-    /* Load custom tabs as collapsed */
-    $j('#myForm > div.box-round > h2.lpsCollapsibleHeader').each(function() {
-      hideCollapseClasses($j(this));
-      hideCollapseText($j(this));
-      hideCollapseTarget($j(this));
-    });
+  } else if ( $j("div#content-main > h1:contains('Incidents Summary')").length > 0 ) {
+    $incidentBox = $j("div#content-main > form#rptFilters");
+    prepResources($incidentBox);
     
-    $j("div#LPS-DRCustomhiddentable").remove();
-  }
-  else if ( $j("div#content-main > h1:contains('Incident Management')").length > 0 )
-  {
-    var $incidentBox = $j("h1:contains('Incident Management') + div");
-    var $lpsHeaders = $j('.lpsCollapsibleHeader'); /* [(0)"Incident Resources", (1)"Incident Letter Templates", (2)"Incident Codes"] */
-    
-    /* Build by stacking on top of "Incident Description" */
-    $incidentBox.prepend( $j("#incidentCodes") );
-    $incidentBox.prepend( $lpsHeaders.eq(2) );
-    $incidentBox.prepend( $j("#letterTemplates") );
-    $incidentBox.prepend( $lpsHeaders.eq(1) );
-    $incidentBox.prepend( $j("#incidentResources") );
-    $incidentBox.prepend( $lpsHeaders.first() );
-    
-    ModLPSDispResources();
-    
-    /* Load custom tabs as collapsed */
-    $j('div#content-main > div.ng-cloak > h2.lpsCollapsibleHeader').each(function() {
-      hideCollapseClasses($j(this));
-      hideCollapseText($j(this));
-      hideCollapseTarget($j(this));
-    });
-    
-    $j("div#LPS-DRCustomhiddentable").remove();
-  }
-  else if ( $j("div#content-main > h1:contains('Incident List')").length > 0 )
-  {
-    $j("div#content-main > div.box-round.incident-collapsible").before( '<div id="LPS-DRCustom">')
-    
-    var $incidentBox = $j("div#content-main > div#LPS-DRCustom");
-    var $lpsHeaders = $j('.lpsCollapsibleHeader'); /* [(0)"Incident Resources", (1)"Incident Letter Templates", (2)"Incident Codes"] */
-    
-    /* Build by stacking on top of "Incident Description" */
-    $incidentBox.prepend( $j("#incidentCodes") );
-    $incidentBox.prepend( $lpsHeaders.eq(2) );
-    $incidentBox.prepend( $j("#letterTemplates") );
-    $incidentBox.prepend( $lpsHeaders.eq(1) );
-    $incidentBox.prepend( $j("#incidentResources") );
-    $incidentBox.prepend( $lpsHeaders.first() );
-    
-    ModLPSDispResources();
-    
-    /* Load custom tabs as collapsed */
-    
-    $j('div#content-main > div#LPS-DRCustom > h2.lpsCollapsibleHeader').each(function() {
-      hideCollapseClasses($j(this));
-      hideCollapseText($j(this));
-      hideCollapseTarget($j(this));
-    });
-    
-    $j("div#LPS-DRCustomhiddentable").remove();
-  }
-  else if ( $j("div#content-main > h1:contains('Incidents Summary')").length > 0 )
-  {
-    var $incidentBox = $j("div#content-main > form#rptFilters");
-    var $lpsHeaders = $j('.lpsCollapsibleHeader'); /* [(0)"Incident Resources", (1)"Incident Letter Templates", (2)"Incident Codes"] */
-    
-    /* Build by stacking on top of "Incident Description" */
-    $incidentBox.prepend( $j("#incidentCodes") );
-    $incidentBox.prepend( $lpsHeaders.eq(2) );
-    $incidentBox.prepend( $j("#letterTemplates") );
-    $incidentBox.prepend( $lpsHeaders.eq(1) );
-    $incidentBox.prepend( $j("#incidentResources") );
-    $incidentBox.prepend( $lpsHeaders.first() );
-    
-    ModLPSDispResources();
-    
-    /* Load custom tabs as collapsed */
-    
-    $j('div#content-main > form#rptFilters > h2.lpsCollapsibleHeader').each(function() {
-      hideCollapseClasses($j(this));
-      hideCollapseText($j(this));
-      hideCollapseTarget($j(this));
-    });
-    
-    $j("div#LPS-DRCustomhiddentable").remove();
-  }
-  else {
-    $j(document).ready(RemoveLPSDispResources);
-  }
-    
+  } else { $j("div#LPS-DRCustomhiddentable").remove(); }
 }
 
-
-
 //debugger;
-if (!!LPSDRTEST )
-{
-    //console.log('LPSDRTEST not is null');
-    var LPSDRTEST = 0;
+if (!!LPSDRTEST ) {
+  //console.log('LPSDRTEST not is null');
+  var LPSDRTEST = 0;
 } else {
-    //console.log('LPSDRTEST is null');
-    var LPSDRTEST = 1;
-    $j(document).ready(AddLPSDispResources);
+  //console.log('LPSDRTEST is null');
+  var LPSDRTEST = 1;
+  $j(document).ready(AddLPSDispResources);
 }
 
 //if (LPSDRTEST == 1)
