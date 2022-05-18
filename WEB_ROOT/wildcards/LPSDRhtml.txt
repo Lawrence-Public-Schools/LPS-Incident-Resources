@@ -24,10 +24,14 @@
       <ul>
         <!-- <li><a target="_blank" href="https://drive.google.com/file/d/13weNUksaVl3ZckHyQ3rJ7AwXL4hyd1Ix/view">Superintendent Directive Regarding Discipline</a></li>  *Now included in the Code of Conduct Book* -->
         <li><a target="_blank" href="https://drive.google.com/file/d/13eQtb8ZQSa8QRxe-E0sdxNCJbRDc6vQ-/view">MOU with the Lawrence Police Department</a></li>
+        <li><a target = "_blank" href="https://drive.google.com/file/d/13weNUksaVl3ZckHyQ3rJ7AwXL4hyd1Ix/view?usp=sharing">Directive Regarding Discipline</a></li>
+        <li><a target="_black" href="https://drive.google.com/file/d/13eQtb8ZQSa8QRxe-E0sdxNCJbRDc6vQ-/view?usp=sharing">Memorandujm of Understanding between Lawrence Public School and Lawrence Police Department</a></li>
         <li><a target="_blank" href="https://www.lawrence.k12.ma.us/files/lps/LPSdistrictpolicies/CodeofconductbookSY21-22SY21-22FINAL-GoogleDocs.pdf">Code of Conduct Handbook</a></li> <!-- Version: 2021-22 -->
         <li><a target="_blank" href="https://docs.google.com/spreadsheets/d/1rrbimFsjyXHgPltcs5OwK623PthzIKMqPEzQwKIr7A4/view">Code of Conduct Mappings</a></li>
         <li><a target="_blank" href="https://docs.google.com/presentation/d/1xH_yR3av6L1n9v7PWLR2Y-79i4CsUVNukKM7JGx8d3A/view">Reporting Disciplinary Incidents in PowerSchool Deck (Information & Instructions)</a></li>
-        <li><a target="_blank" href="https://drive.google.com/file/d/1KHFqIz0-i3GSSLLP3tepsyn0PAfJnJqu/preview">Reporting Disciplinary Incidents in PowerSchool Training Video</a></li>
+        <!--<li><a target="_blank" href="https://drive.google.com/file/d/1KHFqIz0-i3GSSLLP3tepsyn0PAfJnJqu/preview">Reporting Disciplinary Incidents in PowerSchool Training Video</a></li> -->
+        <li><a target="_blank" href="https://lawrencek12maus-my.sharepoint.com/:v:/r/personal/denise_snyder_lawrence_k12_ma_us/Documents/Documents/Zoom/2020-09-10%2013.45.09%20Denise%20Snyder%27s%20Personal%20Meeting%20Room%207734245947/zoom_0.mp4?csf=1&web=1&e=R0xzpM">Adding Incident in Incident Management</a></li>
+        <li><a target="_blank" href ="https://lawrencek12maus-my.sharepoint.com/:v:/r/personal/denise_snyder_lawrence_k12_ma_us/Documents/Documents/Zoom/2020-09-10%2013.45.09%20Denise%20Snyder%27s%20Personal%20Meeting%20Room%207734245947/zoom_1.mp4?csf=1&web=1&e=NVXtyH" >Overview of The Disciplinary Letters</a></li>
         <li><a target="_blank" href="https://docs.google.com/document/d/17PUss7Zfxq7qmkR6j273dBAbCLsyquSr-Fsft8d7g9s/view?usp=sharing">Discipline Letter Instructions</a></li>
         <br />
         <li><a target="_blank" href="http://www.doe.mass.edu/infoservices/data/ssdr/">DESE SSDR Information</a></li>
