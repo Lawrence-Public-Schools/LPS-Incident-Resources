@@ -10,7 +10,7 @@
     list-style-type: none;
     list-style-position: outside;
   }
-  #incidentCodes h3 {
+  #incidentLPSCodes h3 {
     text-decoration: underline;
     border: none;
   }
@@ -111,9 +111,9 @@
     </div>
   </div>
   <!--|===============================|Guidelines & Codes Reference (very long)|===============================|-->
-  <h2 id="incidentCodesHeader" pss-expand-collapse-item="resources" class="collapsed lpsCollapsibleHeader"><u>Disiplinary Incident Guidelines and Codes</u> <small>(Click to Expand/Collapse)</small></h2>
-  <div id="incidentCodes">
-    <div id="incidentCodesRow" class="row">
+  <h2 id="incidentLPSCodesHeader" pss-expand-collapse-item="resources" class="collapsed lpsCollapsibleHeader"><u>Disiplinary Incident Guidelines and Codes</u> <small>(Click to Expand/Collapse)</small></h2>
+  <div id="incidentLPSCodes">
+    <div id="incidentLPSCodesRow" class="row">
       <h3 style="text">DISCIPLINE GUIDELINES AND CODES</h3>
       <p>In accordance with the student’s right to due process (see, “Due Process”), the Lawrence Public Schools may discipline a student according to the following guidelines and discipline codes.</p>
       <ul>
