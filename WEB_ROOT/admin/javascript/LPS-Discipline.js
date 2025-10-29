@@ -76,7 +76,7 @@ function prepResources($target) {
     
     
     /* Build by stacking on top of "Incident Description" */
-    $target.prepend( $j("#incidentCodes") );
+    $target.prepend( $j("#incidentLPSCodes") );
     $target.prepend( $lpsHeaders.eq(2) );
     $target.prepend( $j("#letterTemplates") );
     $target.prepend( $lpsHeaders.eq(1) );
