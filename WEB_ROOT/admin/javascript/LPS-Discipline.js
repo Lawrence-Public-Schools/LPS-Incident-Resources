@@ -1,8 +1,3 @@
-/* Ensure $j is available across PS versions */
-if (typeof $j === 'undefined' && typeof jQuery !== 'undefined') {
-  var $j = jQuery;
-}
-
 function ModLPSDispResources() {
   /* Inserting code number cells dynamically to keep this file smaller and easier to update */
   let letters = ['C','D','M'];
@@ -93,76 +88,26 @@ function prepResources($target) {
 }
 
 function AddLPSDispResources() {
-  // Avoid duplicate insertion
-  if ($j('#LPS-DRCustom').length > 0 || $j('#incidentResources').length > 0) {
-    return;
-  }
-
-  function getMainContainer() {
-    // Prefer the long-standing PS container, then fallbacks for newer skins
-    let $c = $j('div#content-main');
-    if ($c.length) return $c;
-    $c = $j('div#content');
-    if ($c.length) return $c;
-    $c = $j('main#content');
-    if ($c.length) return $c;
-    return $j('body');
-  }
-
-  var $incidentBox = null;
-
-  // 1) Detailed incident (older/newer variants)
-  if ($j('#incidentBody').length > 0 || $j('#incidentDetail').length > 0) {
-    // Insert near the top of the primary form/panel if present, else fall back to content container
-    let $panel = $j('#myForm, form#incidentForm').first();
-    if ($panel.length) {
-      // Create a container at the top of the panel
-      $panel.prepend('<div id="LPS-DRCustom"></div>');
-      $incidentBox = $j('#LPS-DRCustom');
-    }
-  }
-
-  // 2) Incident landing/list/summary pages
-  if (!$incidentBox) {
-    // Match a variety of headings used across versions
-    const headings = [
-      "Incident Management",
-      "Incident List",
-      "Incidents Summary",
-      "All Incidents",
-      "Incidents"
-    ];
-    let $content = getMainContainer();
-    // Always create a dedicated container at the very top of the main content
-    if ($content.length) {
-      if ($content.children().length > 0) {
-        $content.children().first().before('<div id="LPS-DRCustom"></div>');
-      } else {
-        $content.prepend('<div id="LPS-DRCustom"></div>');
-      }
-      $incidentBox = $j('#LPS-DRCustom');
-    }
-
-    // Additionally, if a known heading is present but we didn’t find a container, attempt to place after it
-    if (!$incidentBox || !$incidentBox.length) {
-      for (let i = 0; i < headings.length; i++) {
-        let h = headings[i];
-        let $h1 = $j("h1:contains('" + h + "')").first();
-        if ($h1.length) {
-          $h1.after('<div id="LPS-DRCustom"></div>');
-          $incidentBox = $j('#LPS-DRCustom');
-          break;
-        }
-      }
-    }
-  }
-
-  if ($incidentBox && $incidentBox.length) {
+  var $incidentBox;
+  
+  if ( $j("#incidentBody").length > 0 ) {
+    $incidentBox = $j('#myForm > div.box-round');
     prepResources($incidentBox);
-  } else {
-    // If we cannot determine a safe target, unhide the content inline so users still see it
-    $j('#LPS-DRCustomhiddentable').show();
-  }
+    
+  } else if ( $j("div#content-main > h1:contains('Incident Management')").length > 0 ) {
+    $incidentBox = $j("h1:contains('Incident Management') + div");
+    prepResources($incidentBox);
+    
+  } else if ( $j("div#content-main > h1:contains('Incident List')").length > 0 ) {
+    $j("div#content-main > div.box-round.incident-collapsible").before( '<div id="LPS-DRCustom">');
+    $incidentBox = $j("div#content-main > div#LPS-DRCustom");
+    prepResources($incidentBox);
+    
+  } else if ( $j("div#content-main > h1:contains('Incidents Summary')").length > 0 ) {
+    $incidentBox = $j("div#content-main > form#rptFilters");
+    prepResources($incidentBox);
+    
+  } else { $j("div#LPS-DRCustomhiddentable").remove(); }
 }
 
 //debugger;
