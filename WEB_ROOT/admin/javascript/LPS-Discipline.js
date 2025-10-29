@@ -98,6 +98,10 @@ function AddLPSDispResources() {
     $incidentBox = $j("h1:contains('Incident Management') + div");
     prepResources($incidentBox);
     
+  } else if ( $j("div#content-main > h1:contains('All Incidents')").length > 0 ) {
+    $incidentBox = $j("h1:contains('All Incidents') + div");
+    prepResources($incidentBox);
+    
   } else if ( $j("div#content-main > h1:contains('Incident List')").length > 0 ) {
     $j("div#content-main > div.box-round.incident-collapsible").before( '<div id="LPS-DRCustom">');
     $incidentBox = $j("div#content-main > div#LPS-DRCustom");
