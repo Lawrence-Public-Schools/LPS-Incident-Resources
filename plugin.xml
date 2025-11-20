@@ -3,10 +3,10 @@
 <plugin xmlns="http://plugin.powerschool.pearson.com"
         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
         xsi:schemaLocation='http://plugin.powerschool.pearson.com plugin.xsd'
-        name="LPS Discipline Resources"
+        name="LPS Incident Resources"
         version="1.7"
         description="add Discipline Resources to incidents">
-    <publisher name="Logan Arias">
-    <contact email="Logan.Arias@lawrence.k12.ma.us"/>
+    <publisher name="Kaif Khalifa">
+    <contact email="Mahammed.Khalifa@lawrence.k12.ma.us"/>
     </publisher>
 </plugin>
