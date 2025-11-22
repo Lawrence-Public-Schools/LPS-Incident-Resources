@@ -32,6 +32,9 @@ function ModLPSDispResources() {
         case 'D3':
           createSubCode(3);
           break;
+        case 'D6':
+          createSubCode(4);
+          break;
         case 'D8':
           createSubCode(4);
           break;
@@ -48,7 +51,7 @@ function ModLPSDispResources() {
           createSubCode(5);
           break;
         case 'M6':
-          createSubCode(3);
+          createSubCode(4);
           break;
         case 'M9':
           createSubCode(4);
@@ -71,6 +74,44 @@ function ModLPSDispResources() {
   });
 }
 
+function initLpsCollapsibles() {
+    let sections = [
+        ['#incidentResourcesHeader', '#incidentResources'],
+        ['#letterTemplatesHeader', '#letterTemplates'],
+        ['#incidentCodesHeader', '#incidentCodes']
+    ];
+
+    sections.forEach(function(pair) {
+        let $header = $j(pair[0]);
+        let $section = $j(pair[1]);
+
+        if (!$header.length || !$section.length) { return; }
+        $header.attr('aria-controls', $section.attr('id'));
+
+        if ($header.hasClass('collapsed')) {
+            $section.hide();
+            $header.attr('aria-expanded', 'false');
+        } else {
+            $section.show();
+            $header.attr('aria-expanded', 'true');
+        }
+
+        $header.off('click.lpsdr').on('click.lpsdr', function(event) {
+            event.preventDefault();
+
+            if ($header.hasClass('collapsed')) {
+                $header.removeClass('collapsed');
+                $section.stop(true, true).slideDown('fast');
+                $header.attr('aria-expanded', 'true');
+            } else {
+                $header.addClass('collapsed');
+                $section.stop(true, true).slideUp('fast');
+                $header.attr('aria-expanded', 'false');
+            }
+        });
+    });
+}
+
 function prepResources($target) {
     let $lpsHeaders = $j('.lpsCollapsibleHeader'); /* [(0)"Incident Resources", (1)"Incident Letter Templates", (2)"Incident Codes"] */
     
@@ -85,6 +126,7 @@ function prepResources($target) {
     
     $j("div#LPS-DRCustomhiddentable").remove();
     ModLPSDispResources();
+    initLpsCollapsibles();
 }
 
 function AddLPSDispResources() {
