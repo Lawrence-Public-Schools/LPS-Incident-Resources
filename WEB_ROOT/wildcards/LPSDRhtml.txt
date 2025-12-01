@@ -60,9 +60,8 @@
     <div class="row">
       <ul>
         <!-- <li><a target="_blank" href="https://drive.google.com/file/d/13weNUksaVl3ZckHyQ3rJ7AwXL4hyd1Ix/view">Superintendent Directive Regarding Discipline</a></li>  *Now included in the Code of Conduct Book* -->
-        <li><a target="_blank" href="https://drive.google.com/file/d/13eQtb8ZQSa8QRxe-E0sdxNCJbRDc6vQ-/view">MOU with the Lawrence Police Department</a></li>
+        <li><a target="_blank" href="https://drive.google.com/file/d/13eQtb8ZQSa8QRxe-E0sdxNCJbRDc6vQ-/view">MOU between Lawrence Public School and Lawrence Police Department</a></li>
         <li><a target = "_blank" href="https://drive.google.com/file/d/13weNUksaVl3ZckHyQ3rJ7AwXL4hyd1Ix/view?usp=sharing">Directive Regarding Discipline</a></li>
-        <li><a target="_black" href="https://drive.google.com/file/d/13eQtb8ZQSa8QRxe-E0sdxNCJbRDc6vQ-/view?usp=sharing">Memorandum of Understanding between Lawrence Public School and Lawrence Police Department</a></li>
         <li><a target="_blank" href="https://www.lawrence.k12.ma.us/images/PDFs/district/policies/studentrightsandthecodeofconduct/LPS-Code-of-Conduct-book-SY25-26-English-Updated-8-14-25-NA.pdf">Code of Conduct Handbook</a></li> <!-- Version: 2021-22 -->
         <!-- Removed: Code of Conduct Mappings -->
         <li><a target="_blank" href="https://docs.google.com/presentation/d/1tMZuyadTm7eO9LIi_9CJ5xxvunNaowGK8Vs_P-oVCF8/edit?slide=id.p#slide=id.p">Reporting Disciplinary Incidents in PowerSchool Deck (Information & Instructions)</a></li>
