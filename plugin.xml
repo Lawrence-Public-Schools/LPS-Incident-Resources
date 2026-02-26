@@ -3,8 +3,8 @@
 <plugin xmlns="http://plugin.powerschool.pearson.com"
         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
         xsi:schemaLocation='http://plugin.powerschool.pearson.com plugin.xsd'
-        name="LPS Incident Resources"
-        version="1.7"
+        name="LPS Discipline Resources"
+        version="1.7.2"
         description="add Discipline Resources to incidents">
     <publisher name="Kaif Khalifa">
     <contact email="Mahammed.Khalifa@lawrence.k12.ma.us"/>

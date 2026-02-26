@@ -117,7 +117,7 @@ function prepResources($target) {
     
     
     /* Build by stacking on top of "Incident Description" */
-    $target.prepend( $j("#incidentCodes") );
+    $target.prepend( $j("#incidentLPSCodes") );
     $target.prepend( $lpsHeaders.eq(2) );
     $target.prepend( $j("#letterTemplates") );
     $target.prepend( $lpsHeaders.eq(1) );
@@ -138,6 +138,10 @@ function AddLPSDispResources() {
     
   } else if ( $j("div#content-main > h1:contains('Incident Management')").length > 0 ) {
     $incidentBox = $j("h1:contains('Incident Management') + div");
+    prepResources($incidentBox);
+    
+  } else if ( $j("div#content-main > h1:contains('All Incidents')").length > 0 ) {
+    $incidentBox = $j("h1:contains('All Incidents') + div");
     prepResources($incidentBox);
     
   } else if ( $j("div#content-main > h1:contains('Incident List')").length > 0 ) {
