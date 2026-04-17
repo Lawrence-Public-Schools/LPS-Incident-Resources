@@ -47,7 +47,7 @@
     list-style-type: none;
     list-style-position: outside;
   }
-  #incidentCodes h3 {
+  #lpsIncidentCodes h3 {
     text-decoration: underline;
     border: none;
   }
@@ -62,7 +62,7 @@
         <!-- <li><a target="_blank" href="https://drive.google.com/file/d/13weNUksaVl3ZckHyQ3rJ7AwXL4hyd1Ix/view">Superintendent Directive Regarding Discipline</a></li>  *Now included in the Code of Conduct Book* -->
         <li><a target="_blank" href="https://drive.google.com/file/d/13eQtb8ZQSa8QRxe-E0sdxNCJbRDc6vQ-/view">MOU between Lawrence Public School and Lawrence Police Department</a></li>
         <li><a target = "_blank" href="https://drive.google.com/file/d/13weNUksaVl3ZckHyQ3rJ7AwXL4hyd1Ix/view?usp=sharing">Directive Regarding Discipline</a></li>
-        <li><a target="_blank" href="https://www.lawrence.k12.ma.us/images/PDFs/district/policies/studentrightsandthecodeofconduct/LPS-Code-of-Conduct-book-SY25-26-English-Updated-8-14-25-NA.pdf">Code of Conduct Handbook</a></li> <!-- Version: 2021-22 -->
+        <li><a target="_blank" href="https://www.lawrence.k12.ma.us/about/district/policies/students-rights-and-the-code-of-conduct?highlight=WyJwYXNzY29kZSIsImNvZGUiLCJjb2RlcyIsInFyLWNvZGUiLCJvZiIsIm9mZmVyZWQiLCJvZmZpY2UiLCJwYXJhcHJvZmVzc2lvbmFscyIsInByb29mIiwidW5vZmZpY2lhbCJd">Code of Conduct Handbook</a></li> <!-- Version: 2021-22 -->
         <!-- Removed: Code of Conduct Mappings -->
         <li><a target="_blank" href="https://docs.google.com/presentation/d/1tMZuyadTm7eO9LIi_9CJ5xxvunNaowGK8Vs_P-oVCF8/edit?slide=id.p#slide=id.p">Reporting Disciplinary Incidents in PowerSchool Deck (Information & Instructions)</a></li>
         <!--<li><a target="_blank" href="https://drive.google.com/file/d/1KHFqIz0-i3GSSLLP3tepsyn0PAfJnJqu/preview">Reporting Disciplinary Incidents in PowerSchool Training Video</a></li> -->
@@ -170,9 +170,9 @@
       </div>
     </div>
   </div><!--|===============================|Guidelines & Codes Reference (very long)|===============================|-->
-  <h2 id="incidentCodesHeader" pss-expand-collapse-item="resources" class="collapsed lpsCollapsibleHeader"><u>Disiplinary Incident Guidelines and Codes</u> <small>(Click to Expand/Collapse)</small></h2>
-  <div id="incidentCodes">
-    <div id="incidentCodesRow" class="row">
+  <h2 id="lpsIncidentCodesHeader" pss-expand-collapse-item="resources" class="collapsed lpsCollapsibleHeader"><u>Disiplinary Incident Guidelines and Codes</u> <small>(Click to Expand/Collapse)</small></h2>
+  <div id="lpsIncidentCodes">
+    <div id="lpsIncidentCodesRow" class="row">
       <h3 style="text">DISCIPLINE GUIDELINES AND CODES</h3>
       <p>In accordance with the student’s right to due process (see, “Due Process”), the Lawrence Public Schools may discipline a student according to the following guidelines and discipline codes.</p>
       <ul>
