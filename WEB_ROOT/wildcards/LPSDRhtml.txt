@@ -5,30 +5,64 @@
   #letterTemplatesTable {
     display: flex;
     flex-wrap: wrap;
-    gap: 10px;
+    align-items: stretch;
+    gap: 12px;
   }
   .letter-column {
-    flex: 1 1 300px;
+    flex: 1 1 380px;
     border: 1px solid #c5c5c5;
     border-radius: 4px;
-    padding: 10px;
+    padding: 12px;
     background: #f5f5f5;
+    display: flex;
+    flex-direction: column;
   }
   .letter-column h3 {
     margin-top: 0;
-    margin-bottom: 8px;
+    margin-bottom: 12px;
     text-align: center;
   }
-  .letter-column table {
-    width: 100%;
+  .template-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
   }
-  .letter-column table th,
-  .letter-column table td {
-    border: none;
-    padding: 4px 6px;
+  .template-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    padding: 8px 10px;
+    border-top: 1px solid rgba(0, 0, 0, 0.08);
+    background: rgba(255, 255, 255, 0.55);
   }
-  .letter-column table tr:nth-child(odd) {
-    background: rgba(255, 255, 255, 0.5);
+  .template-item:first-child {
+    border-top: none;
+  }
+  .template-title {
+    flex: 1 1 auto;
+    font-weight: 600;
+    line-height: 1.3;
+  }
+  .template-links {
+    display: flex;
+    flex: 0 0 auto;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    gap: 6px;
+  }
+  .template-links a {
+    display: inline-block;
+    padding: 3px 8px;
+    border-radius: 999px;
+    background: rgba(255, 255, 255, 0.9);
+    border: 1px solid rgba(0, 0, 0, 0.12);
+    text-decoration: none;
+    white-space: nowrap;
+  }
+  .template-links a:hover,
+  .template-links a:focus {
+    text-decoration: underline;
   }
   .letter-column-green {
     background: #dff4df;
@@ -38,6 +72,15 @@
   }
   .letter-column-orange {
     background: #ffe4cc;
+  }
+  @media (max-width: 900px) {
+    .template-item {
+      align-items: flex-start;
+      flex-direction: column;
+    }
+    .template-links {
+      justify-content: flex-start;
+    }
   }
   
   #incidentResources ul {
@@ -83,90 +126,102 @@
     <div id="letterTemplatesTable" class="row">
       <div class="letter-column letter-column-green">
         <h3>37H &frac34;</h3>
-        <table class="grid">
-          <thead>
-            <tr>
-              <th>English</th>
-              <th>Espa&ntilde;ol</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td><a target="_blank" href="https://docs.google.com/document/d/1V1jdyv0RrHyaJSJdK7ldw1Yckf2yjuuR/view?usp=sharing">37H &frac34; In School Suspension Letter</a></td>
-              <td><a target="_blank" href="https://docs.google.com/document/d/1svFeEfSknWh7TCR1G7lBszHSyksKjxAh/view?usp=sharing">37H &frac34; Carta de Suspensi&oacute;n Escolar</a></td>
-            </tr>
-            <tr>
-              <td><a target="_blank" href="https://docs.google.com/document/d/1MEEnHUFwjiEmqJI2iPJk2nF03eZWYv74/view?usp=sharing">37H &frac34; Long Term Suspension - Hearing Outcome</a></td>
-              <td><a target="_blank" href="https://docs.google.com/document/d/1QvTvm3_Si6gXO3onbp2b3UxX-r8I-DRi/view?usp=sharing">37H &frac34; Suspensi&oacute;n de Largo Plazo  - Resultado de la Audiencia</a></td>
-            </tr>
-            <tr>
-              <td><a target="_blank" href="https://docs.google.com/document/d/19Frx_GiklGVqmVY5FT6ShKQKi6YIQNrt/view?usp=sharing">37H &frac34; Long Term Suspension Notice</a></td>
-              <td><a target="_blank" href="https://docs.google.com/document/d/1-d0QlDNrGEujjpjpGix6mPd32kjnm819/view?usp=sharing">37H &frac34; Aviso de Suspensi&oacute;n de Largo Plazo</a></td>
-            </tr>
-            <tr>
-              <td><a target="_blank" href="https://docs.google.com/document/d/10fV1H5JA0vpmgh3ZDGZZW9wfOaYiCL4A/view?usp=sharing">37H &frac34; Short Term Suspension - Hearing Outcome</a></td>
-              <td><a target="_blank" href="https://docs.google.com/document/d/1CgPDIHQEURWyxqxbyDeTILSKs_WVyVri/view?usp=sharing">37H &frac34; Suspensi&oacute;n de Corto Plazo - Resultado de la Audiencia</a></td>
-            </tr>
-            <tr>
-              <td><a target="_blank" href="https://docs.google.com/document/d/1LRvuBzigwFW3nZaLXYfqHiyjfqKEKUY3/view?usp=sharing">37H &frac34; Short Term Suspension Notice</a></td>
-              <td><a target="_blank" href="https://docs.google.com/document/d/1ClEc8Noy_uXHumoOL15eK3DZxt4j5LMB/view?usp=sharing">37H &frac34; Aviso de Suspensi&oacute;n de Corto Plazo</a></td>
-            </tr>
-          </tbody>
-        </table>
+        <ul class="template-list">
+          <li class="template-item">
+            <span class="template-title">In School Suspension</span>
+            <span class="template-links">
+              <a target="_blank" href="https://docs.google.com/document/d/1VXxKtK30SwmF0D1UPhufkO3HUnLKoMn4/edit?usp=sharing">English</a>
+              <a target="_blank" href="https://docs.google.com/document/d/1ervGIwuK5r9VMN-XtR1pPCAjs3jnQbc7/edit?usp=sharing">Espa&ntilde;ol</a>
+            </span>
+          </li>
+          <li class="template-item">
+            <span class="template-title">Hearing Outcome - Short Term Suspension</span>
+            <span class="template-links">
+              <a target="_blank" href="https://docs.google.com/document/d/19GM7Re6zVAYX3SdNO29xcSa7qiZ817_l/edit?usp=sharing">English</a>
+              <a target="_blank" href="https://docs.google.com/document/d/1arA57v__KFT2o5fnabZ-0uE6oA0lHcNI/edit?usp=sharing">Espa&ntilde;ol</a>
+            </span>
+          </li>
+          <li class="template-item">
+            <span class="template-title">Short Term Suspension Notice</span>
+            <span class="template-links">
+              <a target="_blank" href="https://docs.google.com/document/d/1z1tgaToDdRRIvuG7t-e5a90r4ZUQs1kD/edit?usp=sharing">English</a>
+              <a target="_blank" href="https://docs.google.com/document/d/1-rEtc-rxZ-ip-2TNgK7UW9ypy0RTHFPr/edit?usp=sharing">Espa&ntilde;ol</a>
+            </span>
+          </li>
+          <li class="template-item">
+            <span class="template-title">Hearing Outcome - Long Term Suspension</span>
+            <span class="template-links">
+              <a target="_blank" href="https://docs.google.com/document/d/1f8m52LuczgWGb3xVomaImBDJhNeOcRJb/edit?usp=sharing">English</a>
+              <a target="_blank" href="https://docs.google.com/document/d/1D8q5wE49Vbb-blTgHArDvNnsfd-5T2oh/edit?usp=sharing">Espa&ntilde;ol</a>
+            </span>
+          </li>
+          <li class="template-item">
+            <span class="template-title">Long Term Suspension Notice</span>
+            <span class="template-links">
+              <a target="_blank" href="https://docs.google.com/document/d/1tdfqcXk7UKxduMy51TFFeAEPnxjmcybE/edit?usp=sharing">English</a>
+              <a target="_blank" href="https://docs.google.com/document/d/1B5WxmNzq3azmlCW93VaPlimm8261yGeP/edit?usp=sharing">Espa&ntilde;ol</a>
+            </span>
+          </li>
+        </ul>
       </div>
       <div class="letter-column letter-column-yellow">
         <h3>37H &frac12;</h3>
-        <table class="grid">
-          <thead>
-            <tr>
-              <th>English</th>
-              <th>Espa&ntilde;ol</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td><a target="_blank" href="https://docs.google.com/document/d/1vQnFcEAFBlmBakbf_mfT83mn4sMJV7FB/view?usp=sharing">37H &frac12; Hearing Outcome - Expulsion</a></td>
-              <td><a target="_blank" href="https://docs.google.com/document/d/1KsKcGAvecbVqCR4Htl7PPK-_tgQCKorf/view?usp=sharing">37H &frac12; Resultado de la Audiencia - Expulsi&oacute;n</a></td>
-            </tr>
-            <tr>
-              <td><a target="_blank" href="https://docs.google.com/document/d/1EXFpRAMDKmkL_FSmY5-mgtzbh5OlcPek/view?usp=sharing">37H &frac12; Hearing Outcome - Suspension</a></td>
-              <td><a target="_blank" href="https://docs.google.com/document/d/1mUlLqlJe_dOImZnu_zLkHGTy19Sb6NpI/view?usp=sharing">37H &frac12; Resultado de la Audiencia - Suspensi&oacute;n</a></td>
-            </tr>
-            <tr>
-              <td><a target="_blank" href="https://docs.google.com/document/d/1UJcC2KhsATlmb02j_NVggbyGJWua70Go/view?usp=sharing">37H &frac12; Notice - Expulsion</a></td>
-              <td><a target="_blank" href="https://docs.google.com/document/d/1TudWraEd1d5_T-5hvrv4gH_sFoKhQYki/view?usp=sharing">37H &frac12; Aviso - Expulsi&oacute;n</a></td>
-            </tr>
-            <tr>
-              <td><a target="_blank" href="https://docs.google.com/document/d/1PQwbPP9B1ma8SiAgPTv-Fr0fBJu1LNB0/view?usp=sharing">37H &frac12; Notice - Suspension</a></td>
-              <td><a target="_blank" href="https://docs.google.com/document/d/1xRLHvObYogfjL-GlNo8Q0H_sqhyAo8uB/view?usp=sharing">37H &frac12; Aviso - Suspensi&oacute;n</a></td>
-            </tr>
-          </tbody>
-        </table>
+        <ul class="template-list">
+          <li class="template-item">
+            <span class="template-title">Hearing Outcome - Suspension</span>
+            <span class="template-links">
+              <a target="_blank" href="https://docs.google.com/document/d/1CrRanAq1Uz1KJJHpNeA8RBq4NeQlqpQH/edit?usp=sharing">English</a>
+              <a target="_blank" href="https://docs.google.com/document/d/1SG1mVs37YVKRAoXQeOzJzcijPWTdEN5d/edit?usp=sharing">Espa&ntilde;ol</a>
+            </span>
+          </li>
+          <li class="template-item">
+            <span class="template-title">Notice - Suspension</span>
+            <span class="template-links">
+              <a target="_blank" href="https://docs.google.com/document/d/1bbKVcI2C8sYwrfTe2JCxhIRH3lRpw4_k/edit?usp=sharing">English</a>
+              <a target="_blank" href="https://docs.google.com/document/d/1X1svnlJR5fZNSYeFCD9mmueZeysYf_Zh/edit?usp=sharing">Espa&ntilde;ol</a>
+            </span>
+          </li>
+          <li class="template-item">
+            <span class="template-title">Hearing Outcome - Expulsion</span>
+            <span class="template-links">
+              <a target="_blank" href="https://docs.google.com/document/d/1PUvMxUUmSVgeMM85-6yljorrD89sqiRo/edit?usp=sharing">English</a>
+              <a target="_blank" href="https://docs.google.com/document/d/1Yk94Zb7ICob6XH_bO0v627SRo22ydHVb/edit?usp=sharing">Espa&ntilde;ol</a>
+            </span>
+          </li>
+          <li class="template-item">
+            <span class="template-title">Notice - Expulsion</span>
+            <span class="template-links">
+              <a target="_blank" href="https://docs.google.com/document/d/1YKfVzBlS6sUKhqx9b8Az06vRfdGLjmC5/edit?usp=sharing">English</a>
+              <a target="_blank" href="https://docs.google.com/document/d/1Xi62PuwELvGyQCn-DcOZVEWeyUwIqMrR/edit?usp=sharing">Espa&ntilde;ol</a>
+            </span>
+          </li>
+        </ul>
       </div>
       <div class="letter-column letter-column-orange">
         <h3>37H</h3>
-        <table class="grid">
-          <thead>
-            <tr>
-              <th>English</th>
-              <th>Espa&ntilde;ol</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td><a target="_blank" href="https://docs.google.com/document/d/1RSf6urFCw6e8q_gYFF-awCsttuda7SFC/view?usp=sharing">37H Hearing Notice</a></td>
-              <td><a target="_blank" href="https://docs.google.com/document/d/1HeJDwCShDScdbtVNvzcVJgMnEl0G_gAz/view?usp=sharing">37H Aviso de la Audiencia</a></td>
-            </tr>
-            <tr>
-              <td><a target="_blank" href="https://docs.google.com/document/d/1kMY0u5Fnb_yKbXsEwyK6hdTTQ2E7l5cN/view?usp=sharing">37H Hearing Outcome - Expel</a></td>
-              <td><a target="_blank" href="https://docs.google.com/document/d/1tTfTnAJRMONr98JAZVSpdoJoTHBlpNpY/view?usp=sharing">37H Resultado de la Audiencia - Expulsar</a></td>
-            </tr>
-            <tr>
-              <td><a target="_blank" href="https://docs.google.com/document/d/1BKgD-iCERTC5QX8R3QjLe9fKcg6UaNSt/view?usp=sharing">37H Hearing Outcome - Suspend</a></td>
-              <td><a target="_blank" href="https://docs.google.com/document/d/1_YwpAHQH9Fr9W5gDQun5tfIqCheC6UuD/view?usp=sharing">37H Resultado de la Audiencia - Suspender</a></td>
-            </tr>
-          </tbody>
-        </table>
+        <ul class="template-list">
+          <li class="template-item">
+            <span class="template-title">Hearing Notice</span>
+            <span class="template-links">
+              <a target="_blank" href="https://docs.google.com/document/d/14OAehnpW0AW_PM4r9yC9AZwJsyprwEPg/edit?usp=sharing">English</a>
+              <a target="_blank" href="https://docs.google.com/document/d/1AX-LLKKSDrMYBo6ruaBGcLFuM5ufWIsa/edit?usp=sharing">Espa&ntilde;ol</a>
+            </span>
+          </li>
+          <li class="template-item">
+            <span class="template-title">Hearing Outcome - Suspension</span>
+            <span class="template-links">
+              <a target="_blank" href="https://docs.google.com/document/d/1X66FV7QDOnIQpHmEkuXeYYjVm_iYJAQl/edit?usp=sharing">English</a>
+              <a target="_blank" href="https://docs.google.com/document/d/19xuG9JvdhA6szuH7AwxlPcbsOG6dx07y/edit?usp=sharing">Espa&ntilde;ol</a>
+            </span>
+          </li>
+          <li class="template-item">
+            <span class="template-title">Hearing Outcome - Expulsion</span>
+            <span class="template-links">
+              <a target="_blank" href="https://docs.google.com/document/d/1WKCkjtxRqvTfmD71rFX4DTh9GeGeOkyZ/edit?usp=sharing">English</a>
+              <a target="_blank" href="https://docs.google.com/document/d/1eBojCqW3KEOVP_quI-UB5Ybm0dlll13J/edit?usp=sharing">Espa&ntilde;ol</a>
+            </span>
+          </li>
+        </ul>
       </div>
     </div>
   </div><!--|===============================|Guidelines & Codes Reference (very long)|===============================|-->

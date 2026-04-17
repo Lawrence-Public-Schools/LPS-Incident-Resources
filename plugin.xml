@@ -4,7 +4,7 @@
         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
         xsi:schemaLocation='http://plugin.powerschool.pearson.com plugin.xsd'
         name="LPS Incident Resources"
-        version="1.7"
+        version="1.12"
         description="add Discipline Resources to incidents">
     <publisher name="Kaif Khalifa">
     <contact email="Mahammed.Khalifa@lawrence.k12.ma.us"/>

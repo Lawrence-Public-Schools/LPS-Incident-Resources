@@ -78,7 +78,7 @@ function initLpsCollapsibles() {
     let sections = [
         ['#incidentResourcesHeader', '#incidentResources'],
         ['#letterTemplatesHeader', '#letterTemplates'],
-        ['#incidentCodesHeader', '#incidentCodes']
+        ['#lpsIncidentCodesHeader', '#lpsIncidentCodes']
     ];
 
     sections.forEach(function(pair) {
@@ -117,7 +117,7 @@ function prepResources($target) {
     
     
     /* Build by stacking on top of "Incident Description" */
-    $target.prepend( $j("#incidentCodes") );
+    $target.prepend( $j("#lpsIncidentCodes") );
     $target.prepend( $lpsHeaders.eq(2) );
     $target.prepend( $j("#letterTemplates") );
     $target.prepend( $lpsHeaders.eq(1) );
