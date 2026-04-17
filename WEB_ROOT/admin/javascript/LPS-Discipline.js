@@ -113,6 +113,8 @@ function initLpsCollapsibles() {
 }
 
 function prepResources($target) {
+    if (window.LPSDRMounted) { return; }
+
     let $lpsHeaders = $j('.lpsCollapsibleHeader'); /* [(0)"Incident Resources", (1)"Incident Letter Templates", (2)"Incident Codes"] */
     
     
@@ -125,12 +127,26 @@ function prepResources($target) {
     $target.prepend( $lpsHeaders.first() );
     
     $j("div#LPS-DRCustomhiddentable").remove();
+    window.LPSDRMounted = true;
     ModLPSDispResources();
     initLpsCollapsibles();
 }
 
-function AddLPSDispResources() {
+function retryLPSDispResources(retriesLeft) {
+  if (window.LPSDRMounted) { return; }
+
+  if (retriesLeft > 0) {
+    window.setTimeout(function() {
+      AddLPSDispResources(retriesLeft - 1);
+    }, 300);
+  } else {
+    $j("div#LPS-DRCustomhiddentable").remove();
+  }
+}
+
+function AddLPSDispResources(retriesLeft) {
   var $incidentBox;
+  retriesLeft = (typeof retriesLeft === 'number') ? retriesLeft : 20;
   
   if ( $j("#incidentBody").length > 0 ) {
     $incidentBox = $j('#myForm > div.box-round');
@@ -140,10 +156,22 @@ function AddLPSDispResources() {
     $incidentBox = $j("h1:contains('Incident Management') + div");
     prepResources($incidentBox);
     
-  } else if ( $j("div#content-main > h1:contains('Incident List')").length > 0 ) {
-    $j("div#content-main > div.box-round.incident-collapsible").before( '<div id="LPS-DRCustom">');
-    $incidentBox = $j("div#content-main > div#LPS-DRCustom");
-    prepResources($incidentBox);
+  } else if (
+    $j("div#content-main > h1:contains('Incident List'), div#content-main > h1:contains('All Incidents')").length > 0 ||
+    window.location.pathname === '/admin/incidents/home.html'
+  ) {
+    let $insertBefore = $j("div#content-main > div.box-round.incident-collapsible").first();
+    if ( !$insertBefore.length ) {
+      $insertBefore = $j("div#content-main > div.box-round").first();
+    }
+
+    if ( $insertBefore.length ) {
+      $insertBefore.before( '<div id="LPS-DRCustom">' );
+      $incidentBox = $j("div#content-main > div#LPS-DRCustom");
+      prepResources($incidentBox);
+    } else {
+      retryLPSDispResources(retriesLeft);
+    }
     
   } else if ( $j("div#content-main > h1:contains('Incidents Summary')").length > 0 ) {
     $incidentBox = $j("div#content-main > form#rptFilters");

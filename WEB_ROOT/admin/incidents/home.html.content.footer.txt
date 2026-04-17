@@ -1,0 +1,44 @@
+~[wc:LPSDRhtml]
+<script type="text/javascript">
+(function () {
+    function mountLpsIncidentResourcesHome() {
+        if (window.LPSDRMounted) {
+            return;
+        }
+
+        if (typeof window.prepResources !== "function" || typeof window.$j === "undefined") {
+            window.setTimeout(mountLpsIncidentResourcesHome, 250);
+            return;
+        }
+
+        var $contentMain = $j("div#content-main");
+        if (!$contentMain.length) {
+            window.setTimeout(mountLpsIncidentResourcesHome, 250);
+            return;
+        }
+
+        var $mount = $j("#LPS-DRHomeMount");
+        if (!$mount.length) {
+            var $header = $j("div#content-main > h1").first();
+            if (!$header.length) {
+                $header = $j("h1:contains('All Incidents')").first();
+            }
+
+            if ($header.length) {
+                $header.after('<div id="LPS-DRHomeMount" class="box-round"></div>');
+            } else {
+                $contentMain.prepend('<div id="LPS-DRHomeMount" class="box-round"></div>');
+            }
+            $mount = $j("#LPS-DRHomeMount");
+        }
+
+        prepResources($mount);
+    }
+
+    if (document.readyState === "loading") {
+        document.addEventListener("DOMContentLoaded", mountLpsIncidentResourcesHome);
+    } else {
+        mountLpsIncidentResourcesHome();
+    }
+})();
+</script>
